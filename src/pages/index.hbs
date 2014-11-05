@@ -1,0 +1,17 @@
+---
+title: Início
+---
+
+<div class="lh-featurette-blog">
+  <div class="container">
+    <div class="row">
+      {{#each blognews}}
+      <div class="{{#if @first}}col-lg-8{{else}}col-lg-4{{/if}}">
+        <a class="lh-blog-entry-anchor" href="{{url}}">
+          {{title}}
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

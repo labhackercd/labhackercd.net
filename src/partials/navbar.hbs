@@ -1,0 +1,29 @@
+<header class="navbar navbar-static-top lh-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".lh-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="index.html" class="navbar-brand">LabHacker</a>
+    </div>
+
+    <nav class="collapse navbar-collapse lh-navbar-collapse" role="navigation">
+
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="https://github.com/labhackercd/">Github</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li{{#is slug "about"}} class="active"{{/is}}>
+          <a href="./about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
