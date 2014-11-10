@@ -37,16 +37,28 @@ module.exports = function(grunt) {
     },
     copy: {
       images: {
-        files: [
-          {expand: true, cwd: './src/assets/', src: './img/**.*', dest: './build/assets/'}
-        ]
+        files: [{
+          expand: true,
+          cwd: './src/assets/',
+          src: './img/**.*',
+          dest: './build/assets/'
+        }]
+      },
+      'bootstrap-js': {
+        files: [{
+          expand: true,
+          cwd: './bower_components/bootstrap-sass-official/assets/javascripts/',
+          src: 'bootstrap.js',
+          dest: './build/assets/js/'
+        }]
       },
       'font-awesome': {
-        files: [
-          {expand: true,
-            cwd: './bower_components/font-awesome/fonts/',
-            src: '**.*', dest: './build/assets/fonts/'}
-        ]
+        files: [{
+          expand: true,
+          cwd: './bower_components/font-awesome/fonts/',
+          src: '**.*',
+          dest: './build/assets/fonts/'
+        }]
       }
     },
     watch: {
@@ -55,15 +67,17 @@ module.exports = function(grunt) {
         tasks: ['assemble'],
         options: {
           reload: true,
+          livereload: true,
           atBegin: true,
           interrupt: true
         }
       },
-      assets: {
-        files: './src/assets/img/*.*',
+      images: {
+        files: './src/assets/img/*',
         tasks: ['copy'],
         options: {
           reload: true,
+          livereload: true,
           atBegin: true,
           interrupt: true
         }
@@ -73,6 +87,7 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         options: {
           reload: true,
+          livereload: true,
           atBegin: true,
           interrupt: true
         }
