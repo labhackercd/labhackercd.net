@@ -50,6 +50,11 @@ module.exports = function(grunt) {
           cwd: './bower_components/bootstrap-sass-official/assets/javascripts/',
           src: 'bootstrap.js',
           dest: './build/assets/js/'
+        }, {
+          expand: true,
+          cwd: './bower_components/jquery/dist/',
+          src: 'jquery.js',
+          dest: './build/assets/js/'
         }]
       },
       'font-awesome': {
