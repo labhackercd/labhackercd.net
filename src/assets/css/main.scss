@@ -1,0 +1,199 @@
+// Core variables and mixins
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/print";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/type";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/code";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/forms";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/component-animations";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/dropdowns";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/button-groups";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/navs";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/navbar";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/pagination";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/pager";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/labels";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/badges";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/jumbotron";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/thumbnails";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/alerts";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/progress-bars";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/media";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/list-group";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/panels";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-embed";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/wells";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/tooltip";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
+@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+$light-gray : #8E8E8E;
+$dark-blue : #2F3F4E;
+$yellow : #BCE328;
+
+body {
+  font-family: 'Oswald';
+}
+
+hr {
+  background-color: $light-gray;
+  height: 2px;
+}
+
+a:hover {
+  color: $dark-blue;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+header {
+  a {
+    color: $light-gray;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .more {
+    float: right;
+    font-size: 1.3em;
+  }
+}
+
+footer {
+  background-color: $dark-blue;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: white;
+  a {
+    color: white;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .text {
+    text-align: justify;
+    opacity: 0.6;
+  }
+}
+
+.nav-top {
+  font-family: 'Oswald';
+  .logo {
+      margin-left: -45px;
+    }
+  .nav.navbar-nav {
+    padding: 40px 0px 40px 0px;
+    float: right;    
+    span {
+      margin-top: -10px;
+    }
+    a {
+      color: $light-gray;
+      &:hover {
+        background: transparent;
+        color: $dark-blue;
+      }
+    }
+    a.twitter {
+      margin-left: 30px;
+      &:hover {
+        color: #4099FF;
+      }
+    }
+    a.facebook {
+      margin-left: -10px;
+      &:hover {
+        color: #3B5998;
+      }
+    }
+    a.flickr {
+      margin-left: -10px;
+      &:hover {
+        color: #0063DC;
+      }
+    }
+    li {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.top {
+  height: 400px;
+  background-image: url('<%= assets %>/img/Header.jpg');
+  background-size: cover;
+  background-position: 20%;
+  border-bottom: 10px solid #BCE328;
+}
+
+.blog {
+  background-color: lighten($light-gray, 35%);
+  .post-slot {
+    margin-top: 30px;
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    .title {
+      position: absolute;
+      margin-right: 20px;
+      bottom: 20px;
+      color: white;
+      font-size: 2.3em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 10px black;
+    }
+  }
+}
+
+.projetos {
+  .project-slot {
+    text-align: center;
+    color: $light-gray;
+    text-transform: uppercase;
+    margin-top: 40px;    
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.github {
+  background-color: lighten($light-gray, 35%);
+  .row {
+    margin-top: 40px;
+  }
+  .text {
+    text-align: justify;
+    color: $light-gray;
+  }
+}

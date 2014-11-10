@@ -2,16 +2,85 @@
 title: Início
 ---
 
-<div class="lh-featurette-blog">
+<section class="blog">
   <div class="container">
+    <header>
+      <a class="more" href="#">+ Ver mais</a>
+      <h1>Blog</h1>           
+    </header>
     <div class="row">
-      {{#each blognews}}
-      <div class="{{#if @first}}col-lg-8{{else}}col-lg-4{{/if}}">
-        <a class="lh-blog-entry-anchor" href="{{url}}">
-          {{title}}
+      {{#each blog}}
+      <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
+        <a href="{{url}}">
+          <div class="post-slot" style="background-image: url('{{image}}');">
+            <div class="title">{{title}}</div>
+          </div>
         </a>
       </div>
       {{/each}}
     </div>
   </div>
-</div>
+</section>
+
+<section class="projetos">
+  <div class="container">
+    <header>
+      <a class="more" href="#">+ Ver mais</a>
+      <h1>Projetos</h1>           
+      <!--<hr/>-->
+    </header>
+    <div class="row">
+      <div class="col-md-3">
+        <a href="#">
+          <div class="project-slot">
+            <img src="{{assets}}/img/e-democracia.jpg" />
+            <h3>e-democracia</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">
+          <div class="project-slot">
+            <img src="{{assets}}/img/retorica.jpg" />
+            <h3>retorica parlamentar</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">
+          <div class="project-slot">
+            <img src="{{assets}}/img/Painel%20social.jpg" />
+            <h3>painel social</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">
+          <div class="project-slot">
+            <img src="{{assets}}/img/mapa%20participativo.jpg" />
+            <h3>mapa participativo</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="github">
+  <div class="container">
+    <header>
+      <a class="more" href="#">+ Ver mais</a>
+      <h1>Github</h1>           
+      <!--<hr/>-->
+    </header>
+    <div class="row">
+      <div class="col-md-6 text">
+        <p>Shabby chic Pitchfork roof party mustache retro. Vegan literally Wes Anderson fixie Echo Park. Mumblecore letterpress pork belly, keffiyeh church-key fashion axe tattooed freegan scenester Marfa authentic chia. Hoodie photo booth XOXO narwhal, Kickstarter kogi normcore Echo Park fanny pack. 90's messenger bag narwhal art party Thundercats. Blog swag farm-to-table narwhal Shoreditch, High Life mustache kale chips post-ironic meditation umami. Whatever meh Vice bespoke vegan, Blue Bottle mumblecore.</p>
+
+        <p>Chia tofu heirloom master cleanse. Synth Cosby sweater selfies, PBR&B distillery craft beer cred cold-pressed vegan pork belly. Organic cardigan mlkshk Godard kitsch, art party bespoke iPhone readymade cray Brooklyn. Quinoa chambray normcore, Austin selvage 90's Neutra keffiyeh Bushwick gluten-free readymade. Photo booth wolf umami, roof party Thundercats Pinterest seitan. Austin next level gastropub, blog distillery American Apparel food truck irony put a bird on it 90's whatever Neutra literally. Pop-up tote bag tilde, stumptown Williamsburg Schlitz Tonx kale chips actually Kickstarter whatever sustainable Marfa hella roof party.</p>
+
+        <p>Distillery cliche four loko butcher. Disrupt High Life food truck gentrify synth, photo booth trust fund direct trade. Swag PBR deep v polaroid Pitchfork fap, Marfa sriracha cornhole single-origin coffee banh mi Vice synth ennui. Odd Future sartorial flexitarian pork belly, plaid sriracha YOLO. Gastropub sriracha sustainable butcher trust fund. Thundercats raw denim meditation Schlitz authentic kale chips, selvage American Apparel before they sold out fingerstache sartorial umami biodiesel. Shabby chic yr chillwave, pug banh mi ennui 3 wolf moon leggings flexitarian Truffaut XOXO Marfa artisan flannel meggings.</p>
+      </div>
+    </div>        
+  </div>
+</section>

@@ -1,29 +1,37 @@
-<header class="navbar navbar-static-top lh-nav" role="banner">
+<nav class="nav-top" class="navbar navbar-static-top" role="navigation">
   <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".lh-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a href="index.html" class="navbar-brand">LabHacker</a>
-    </div>
-
-    <nav class="collapse navbar-collapse lh-navbar-collapse" role="navigation">
-
+    <div id="navbar">
+      <a href="#"><img class="logo" src="{{ assets }}/img/Logo-Glitch.gif" /></a>
       <ul class="nav navbar-nav">
+        <li><a href="#">blog</a></li>
+        <li><a href="#about">e-democracia</a></li>
+        <li><a href="#contact">hackdash</a></li>
+        <li><a href="#contact">github</a></li>
         <li>
-          <a href="https://github.com/labhackercd/">Github</a>
+        <a class="twitter" href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        </li>
+        <li>
+        <a class="facebook" href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        </li>
+        <li>
+        <a class="flickr" href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
         </li>
       </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li{{#is slug "about"}} class="active"{{/is}}>
-          <a href="./about.html">About</a>
-        </li>
-      </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>

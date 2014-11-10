@@ -15,16 +15,37 @@ module.exports = function(grunt) {
         dest: './build/',
       }
     },
-    less: {
-      main: {
-        src: ['./src/assets/css/*.{css,less}'],
-        dest: './build/assets/css/main.css'
+    sass: {
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: './src/assets/css/',
+            src: ['*.scss'],
+            dest: './build/assets/css/',
+            ext: '.css'
+          },
+          {
+            expand: true,
+            cwd: './bower_components/font-awesome/scss/',
+            src: ['font-awesome.scss'],
+            dest: './build/assets/css/',
+            ext: '.css'
+          }
+        ]
       }
     },
     copy: {
-      assets: {
+      images: {
         files: [
           {expand: true, cwd: './src/assets/', src: './img/**.*', dest: './build/assets/'}
+        ]
+      },
+      'font-awesome': {
+        files: [
+          {expand: true,
+            cwd: './bower_components/font-awesome/fonts/',
+            src: '**.*', dest: './build/assets/fonts/'}
         ]
       }
     },
@@ -47,9 +68,9 @@ module.exports = function(grunt) {
           interrupt: true
         }
       },
-      less: {
-        files: './src/assets/css/*.{less,css}',
-        tasks: ['less'],
+      sass: {
+        files: './src/assets/css/*.{scss,css}',
+        tasks: ['sass'],
         options: {
           reload: true,
           atBegin: true,
@@ -60,7 +81,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('assemble-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 };
