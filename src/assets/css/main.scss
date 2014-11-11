@@ -107,17 +107,42 @@ footer {
 
 .nav-top {
   font-family: 'Oswald';
+  margin-bottom: 0px;
   .logo {
       margin-left: -45px;
     }
-  .nav.navbar-nav {
+  .navbar-toggle {
+    margin-top: 40px;
+    background-color: lighten($light-gray, 35%);
+    .icon-bar {
+      background-color: $light-gray;
+    }
+  }
+  .in, .collapsing {
+    ul {
+      width: 100%;
+      margin-right: 5px;
+    }
+    .twitter, .facebook, .flickr {
+      margin-left: -2px !important;
+      padding: 0;
+      margin-top: 15px;
+      margin-left: 15px !important;
+      margin-bottom: 2px;
+    }
+    li {
+      border-top: 1px solid lighten($light-gray, 35%);
+    }
+  }
+  .nav.navbar-nav {    
     padding: 40px 0px 40px 0px;
-    float: right;    
+    float: right;   
     span {
       margin-top: -10px;
     }
     a {
       color: $light-gray;
+      background-color: transparent;
       &:hover {
         background: transparent;
         color: $dark-blue;
