@@ -4,11 +4,14 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         assets: './build/assets',
-        plugins: ['permalinks'],
+        plugins: ['permalinks', 'assemble-feed-download'],
         partials: './src/partials/*.hbs',
         layoutdir: './src/layouts',
         layout: ['default.hbs'],
-        data: ['./src/data/*.{json,yml}']
+        data: ['./src/data/*.{json,yml}'],
+        feeds: [
+          {url: 'http://blog.labhackercd.net/?feed=rss2', dest: './src/data/blog.json'}
+        ]
       },
       site: {
         src: ['./src/pages/*.{hbs,md}'],
