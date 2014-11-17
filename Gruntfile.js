@@ -4,7 +4,7 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         assets: './build/assets',
-        plugins: ['permalinks', 'assemble-feed-download'],
+        plugins: ['assemble-feed-download'],
         partials: './src/partials/*.hbs',
         layoutdir: './src/layouts',
         layout: ['default.hbs'],
