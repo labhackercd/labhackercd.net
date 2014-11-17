@@ -8,9 +8,9 @@ module.exports = function(grunt) {
         partials: './src/partials/*.hbs',
         layoutdir: './src/layouts',
         layout: ['default.hbs'],
-        data: ['./src/data/*.{json,yml}'],
+        data: ['./src/data/*.{json,yml}', './src/feeds/*.{json,yml}'],
         feeds: [
-          {url: 'http://blog.labhackercd.net/?feed=rss2', dest: './src/data/blog.json'}
+          {url: 'http://blog.labhackercd.net/?feed=rss2', dest: './src/feeds/blog.json'}
         ]
       },
       site: {

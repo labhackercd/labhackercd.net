@@ -12,7 +12,7 @@ title: Início
       {{#each blog}}
       <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
         <a href="{{link}}">
-          <div class="post-slot" style="background-image: url('{{image}}');">
+          <div class="post-slot" style="background-image: url('{{this.[rss:image].[#]}}');">
             <div class="title">{{title}}</div>
           </div>
         </a>

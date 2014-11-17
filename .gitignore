@@ -1,6 +1,8 @@
 build
-
 .sass-cache
+
+# Ignore downloaded feeds
+src/feeds
 
 ###############################################################################
 ## Auto-generated through https://www.gitignore.io
