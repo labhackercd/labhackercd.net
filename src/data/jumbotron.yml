@@ -1,0 +1,6 @@
+heading: "Bem-vindo ao portal do Labhacker!"
+lead: Subtítulo para melhorar a informação acima
+button:
+  modifier: "btn-primary"
+  text: Saiba mais...
+  href: "//labhackercd.net/"

@@ -13,6 +13,10 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
         <li><a href="//blog.labhackercd.net/">Blog</a></li>
+        <li{{#is data.section "about"}} class="active"{{/is}}>
+          <a href="{{ relative page.dest "about.html"}}">Sobre</a>
+        </li>
+        <li><a href="//blog.labhackercd.net/">Blog</a></li>
         <li><a href="http://edemocracia.camara.gov.br/web/laboratorio-hacker">e-Democracia</a></li>
         <li><a href="http://labhacker.hackdash.org/">HackDash</a></li>
         <li><a href="https://github.com/labhackercd/">Github</a></li>

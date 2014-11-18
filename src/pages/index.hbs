@@ -5,8 +5,8 @@ title: Início
 <section class="blog">
   <div class="container">
     <header>
-      <a class="more" href="#">+ Ver mais</a>
-      <h1>Blog</h1>           
+      <a class="more" href="//blog.labhackercd.net/">+ Ver mais</a>
+      <h1>Últimas Notícias</h1>
     </header>
     <div class="row">
       {{#each blog}}
@@ -25,53 +25,30 @@ title: Início
 <section class="projetos">
   <div class="container">
     <header>
-      <a class="more" href="#">+ Ver mais</a>
-      <h1>Projetos</h1>           
-      <!--<hr/>-->
+      <!--<a class="more" href="#">+ Ver mais</a>-->
+      <h1>Projetos</h1>
     </header>
     <div class="row">
-      <div class="col-md-3">
-        <a href="#">
+      {{#each projects}}
+      <div class="col-md-4">
+        <a href="{{{href}}}">
           <div class="project-slot">
-            <img src="{{assets}}/img/e-democracia.jpg" />
-            <h3>e-democracia</h3>
+            <img src="{{{image}}}" />
+            <h3>{{{title}}}</h3>
           </div>
         </a>
       </div>
-      <div class="col-md-3">
-        <a href="#">
-          <div class="project-slot">
-            <img src="{{assets}}/img/retorica.jpg" />
-            <h3>retorica parlamentar</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">
-          <div class="project-slot">
-            <img src="{{assets}}/img/Painel%20social.jpg" />
-            <h3>painel social</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">
-          <div class="project-slot">
-            <img src="{{assets}}/img/mapa%20participativo.jpg" />
-            <h3>mapa participativo</h3>
-          </div>
-        </a>
-      </div>
+      {{/each}}
     </div>
   </div>
 </section>
 
+<!--
 <section class="github">
   <div class="container">
     <header>
       <a class="more" href="#">+ Ver mais</a>
       <h1>Github</h1>           
-      <!--<hr/>-->
     </header>
     <div class="row">
       <div class="col-md-6 text">
@@ -84,3 +61,4 @@ title: Início
     </div>        
   </div>
 </section>
+-->
