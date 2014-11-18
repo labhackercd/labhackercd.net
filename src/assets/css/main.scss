@@ -70,6 +70,16 @@ a:hover {
 section {
   padding-top: 20px;
   padding-bottom: 40px;
+  .info {
+    margin-top: 20px;
+    line-height: 20px;
+    i {
+      margin-right: 10px;
+    }
+    a {
+      color: #333333;
+    }
+  }
 }
 
 header {
