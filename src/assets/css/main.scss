@@ -133,12 +133,18 @@ footer {
       width: 100%;
       margin-right: 5px;
     }
-    .twitter, .facebook, .flickr {
+    .icon {
       margin-left: -2px !important;
       padding: 0;
       margin-top: 15px;
       margin-left: 15px !important;
       margin-bottom: 2px;
+    }
+    .icon-img {
+      margin-left: 18px !important;
+    }
+    .separator {
+      display: none;
     }
     li {
       border-top: 1px solid lighten($light-gray, 35%);
@@ -151,6 +157,9 @@ footer {
     span {
       margin-top: -10px;
     }
+    .separator {
+      width: 30px;
+    }
     a {
       color: $light-gray;
       background-color: transparent;
@@ -159,8 +168,30 @@ footer {
         color: $dark-blue;
       }
     }
+    .icon-img {
+      margin: 6px 17px 6px 6px;
+      width: 33px;
+      height: 33px;
+      background-size: 100%;
+      &:hover {
+        background-position-y: 100%;
+        background-size: 100%;
+      }
+    }    
+    a.edemocracia {
+      background-image: url('../img/e-democracia.png');
+    }
+    a.hackdash {
+      background-image: url('../img/hackdash.png');
+    }
+    a.github {
+      margin-left: -10px;
+      &:hover {
+        color: #333;
+      }
+    }
     a.twitter {
-      margin-left: 30px;
+      margin-left: -10px;
       &:hover {
         color: #4099FF;
       }
@@ -174,7 +205,7 @@ footer {
     a.flickr {
       margin-left: -10px;
       &:hover {
-        color: #0063DC;
+        color: #FF0084;
       }
     }
     li {
