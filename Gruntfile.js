@@ -69,6 +69,17 @@ module.exports = function(grunt) {
         }]
       }
     },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          useAvaiablePort: true,
+          //livereload: true,
+          hostname: '*',
+          base: './build'
+        }
+      }
+    },
     watch: {
       assemble: {
         files: './src/{data,layouts,pages,partials}/**/*',
@@ -76,7 +87,6 @@ module.exports = function(grunt) {
         options: {
           reload: true,
           livereload: true,
-          atBegin: true,
           interrupt: true
         }
       },
@@ -86,7 +96,6 @@ module.exports = function(grunt) {
         options: {
           reload: true,
           livereload: true,
-          atBegin: true,
           interrupt: true
         }
       },
@@ -96,7 +105,6 @@ module.exports = function(grunt) {
         options: {
           reload: true,
           livereload: true,
-          atBegin: true,
           interrupt: true
         }
       }
@@ -107,6 +115,19 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['assemble', 'sass', 'copy'])
+  grunt.registerTask('build', [
+    'assemble',
+    'sass',
+    'copy',
+  ]);
+
+  grunt.registerTask('serve', [
+    'build',
+    'connect:server',
+    'watch'
+  ]);
+
+  grunt.registerTask('default', ['build'])
 };

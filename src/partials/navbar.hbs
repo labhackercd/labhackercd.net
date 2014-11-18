@@ -12,16 +12,19 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-        <li><a href="//blog.labhackercd.net/">Blog</a></li>
+        <li><a href="//blog.labhackercd.net/">Blog</a></li>        
+        <li{{#is data.section "about"}} class="active"{{/is}}>
+          <a href="{{ relative page.dest "about.html"}}">Sobre</a>
+        </li>
         <li class="separator">&nbsp</li>
         <li>
-          <a class="edemocracia icon-img" href="http://edemocracia.camara.gov.br/web/laboratorio-hacker"></a>
+          <a title="E-democracia" class="edemocracia icon-img" href="http://edemocracia.camara.gov.br/web/laboratorio-hacker"></a>
         </li>
         <li>
-          <a class="hackdash icon-img" href="http://labhacker.hackdash.org/"></a>
+          <a title="Hackdash" class="hackdash icon-img" href="http://labhacker.hackdash.org/"></a>
         </li>        
         <li>
-        <a class="github icon" href="https://github.com/labhackercd/">
+        <a title="Github" class="github icon" href="https://github.com/labhackercd/">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -29,7 +32,7 @@
         </a>
         </li>
         <li>
-        <a class="twitter icon" href="https://twitter.com/labhackercd">
+        <a title="Twitter" class="twitter icon" href="https://twitter.com/labhackercd">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -37,7 +40,7 @@
         </a>
         </li>
         <li>
-        <a class="facebook icon" href="https://www.facebook.com/LabHackerCD">
+        <a title="Facebook" class="facebook icon" href="https://www.facebook.com/LabHackerCD">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -45,7 +48,7 @@
         </a>
         </li>
         <li>
-        <a class="flickr icon" href="https://www.flickr.com/photos/118815643@N04/">
+        <a title="Flickr" class="flickr icon" href="https://www.flickr.com/photos/118815643@N04/">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
