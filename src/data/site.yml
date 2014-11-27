@@ -1,0 +1,4 @@
+production: <%= production %>
+
+ga:
+  id: UA-57160178-1
