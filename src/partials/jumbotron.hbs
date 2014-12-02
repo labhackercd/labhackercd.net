@@ -1,10 +1,11 @@
 ---
 component: jumbotron
 ---
+
 <div class="top">
   <div class="content">
-    <h1>{{{uppercase heading}}}</h1>
-    <h4>{{{lead}}}</h4>
-    <a class="btn btn-lg {{{button.modifier}}}" role="button" href="{{{button.href}}}">{{{button.text}}}</a>
+    {{#if heading}}<h1>{{{uppercase heading}}}</h1>{{/if}}
+    {{#if lead}}<h4>{{{lead}}}</h4>{{/if}}
+    {{#if button}}<a class="btn btn-lg {{{button.modifier}}}" role="button" href="{{{button.href}}}">{{{button.text}}}</a>{{/if}}
   </div>
 </div>

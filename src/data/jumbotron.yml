@@ -1,6 +1,14 @@
-heading: "Bem-vindo ao portal do Labhacker!"
-lead: Subtítulo para melhorar a informação acima
-button:
-  modifier: "btn-primary"
-  text: Saiba mais...
-  href: "//labhackercd.net/"
+##
+# Uncomment the following to lines to set the heading, lead and button content
+# inside the jumbotron, if needed.
+##
+
+#heading: "Bem-vindo ao portal do Labhacker!"
+#lead: Subtítulo para melhorar a informação acima
+#button:
+#  modifier: "btn-primary"
+#  text: Saiba mais...
+#  href: "//labhackercd.net/"
+
+# Please, do not change the following `jumbotron` value or the build will break.
+jumbotron: yes
