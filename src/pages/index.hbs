@@ -9,7 +9,7 @@ title: Início
       <h1>Últimas Notícias</h1>
     </header>
     <div class="row">
-      {{#each blog}}
+      {{#each (first blog 8)}}
       <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
         <a href="{{link}}">
           <div class="post-slot" style="background-image: url('{{this.[rss:image].[#]}}');">
