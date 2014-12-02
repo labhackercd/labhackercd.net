@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+  'use strict';
+
   grunt.initConfig({
     assemble: {
       options: {
@@ -15,7 +17,7 @@ module.exports = function(grunt) {
       },
       site: {
         src: ['./src/pages/*.{hbs,md}'],
-        dest: './build/',
+        dest: './build/'
       }
     },
     sass: {
@@ -43,7 +45,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: './src/assets/',
-          src: './img/**.*',
+          src: './img/**',
           dest: './build/assets/'
         }]
       },
@@ -91,7 +93,7 @@ module.exports = function(grunt) {
         }
       },
       images: {
-        files: './src/assets/img/*',
+        files: './src/assets/img/**',
         tasks: ['copy'],
         options: {
           reload: true,
