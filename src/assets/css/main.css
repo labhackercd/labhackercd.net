@@ -5341,13 +5341,13 @@ footer {
     justify-content: center; }
   .hackathon-projects .slot .title {
     font-weight: bolder;
-    font-size: 2em; }
+    font-size: 1.5em; }
   .hackathon-projects .slot .project-pic {
     text-align: center; }
     .hackathon-projects .slot .project-pic .circle {
-      width: 90%;
+      width: 80%;
       height: 0;
-      padding-bottom: 90%;
+      padding-bottom: 80%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
       border-radius: 50%;
