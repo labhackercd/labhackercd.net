@@ -300,8 +300,15 @@ footer {
 	}
 }
 
-.hackathon-projects {
+.odd {
 	background-color: lighten($light-gray, 35%);
+}
+
+.pair {
+	background-color: lighten($light-gray, 28%);
+}
+
+.hackathon-projects {
 	header {
 		margin-bottom: 20px;
 	}
@@ -313,8 +320,12 @@ footer {
 		-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
 		-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
 		box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-		.fa {
-			font-size: 4vw;
+		a.link-site {
+			color: inherit;
+			text-decoration: none;
+		}
+		.left {
+			justify-content: flex-start !important;
 		}
 		.row {
 			position: relative;
@@ -332,6 +343,7 @@ footer {
 		}
 		.title {
 			font-weight: bolder;
+			font-size: 2em;
 		}
 		.project-pic {
 			text-align: center;
@@ -346,7 +358,12 @@ footer {
 			}
 		}
 		.github-button {
-			justify-content: flex-start !important;
+			a {
+				color: $light-gray;
+			}
+			a:hover {
+				color: darken($light-gray, 35%);
+			}
 		}
 	}
 }

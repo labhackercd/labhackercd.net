@@ -5309,43 +5309,53 @@ footer {
 .hackathon-about p {
   margin-top: 20px; }
 
-.hackathon-projects {
+.odd {
   background-color: #e7e7e7; }
-  .hackathon-projects header {
-    margin-bottom: 20px; }
-  .hackathon-projects .slot {
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); }
-    .hackathon-projects .slot .fa {
-      font-size: 4vw; }
-    .hackathon-projects .slot .row {
-      position: relative; }
-    .hackathon-projects .slot .vertical-align {
-      display: flex;
-      flex-direction: row; }
-    .hackathon-projects .slot .vertical-align > [class^="col-"], .hackathon-projects .slot .vertical-align > [class*=" col-"] {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .hackathon-projects .slot .title {
-      font-weight: bolder; }
-    .hackathon-projects .slot .project-pic {
-      text-align: center; }
-      .hackathon-projects .slot .project-pic .circle {
-        width: 90%;
-        height: 0;
-        padding-bottom: 90%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background-size: cover; }
-    .hackathon-projects .slot .github-button {
-      justify-content: flex-start !important; }
+
+.pair {
+  background-color: #d5d5d5; }
+
+.hackathon-projects header {
+  margin-bottom: 20px; }
+.hackathon-projects .slot {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); }
+  .hackathon-projects .slot a.link-site {
+    color: inherit;
+    text-decoration: none; }
+  .hackathon-projects .slot .left {
+    justify-content: flex-start !important; }
+  .hackathon-projects .slot .row {
+    position: relative; }
+  .hackathon-projects .slot .vertical-align {
+    display: flex;
+    flex-direction: row; }
+  .hackathon-projects .slot .vertical-align > [class^="col-"], .hackathon-projects .slot .vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .hackathon-projects .slot .title {
+    font-weight: bolder;
+    font-size: 2em; }
+  .hackathon-projects .slot .project-pic {
+    text-align: center; }
+    .hackathon-projects .slot .project-pic .circle {
+      width: 90%;
+      height: 0;
+      padding-bottom: 90%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-size: cover; }
+  .hackathon-projects .slot .github-button a {
+    color: #8E8E8E; }
+  .hackathon-projects .slot .github-button a:hover {
+    color: #353535; }
 
 .github {
   background-color: #e7e7e7; }

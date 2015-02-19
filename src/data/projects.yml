@@ -7,3 +7,6 @@
 - title: "Painel Social"
   href: "http://painelsocial.labhackercd.net/"
   image: "<%= assets %>/img/projects/icon-painel-social.jpg"
+- title: "Hackathons"
+  href: "/hackathon.html#hackathons"
+  image: "<%= assets %>/img/projects/icon_hackathon.jpg"
