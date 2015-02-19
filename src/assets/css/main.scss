@@ -291,6 +291,66 @@ footer {
   }
 }
 
+.hackathon-about {
+	header {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-top: 20px;
+	}
+}
+
+.hackathon-projects {
+	background-color: lighten($light-gray, 35%);
+	header {
+		margin-bottom: 20px;
+	}
+	.slot {
+		margin-top: 20px;
+		padding: 10px;
+		width: 100%;
+		background-color: white;
+		-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		.fa {
+			font-size: 4vw;
+		}
+		.row {
+			position: relative;
+		}
+		.vertical-align {
+		  display: flex;
+		  flex-direction: row;
+		}
+
+		.vertical-align > [class^="col-"],
+		.vertical-align > [class*=" col-"] {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center; 
+		}
+		.title {
+			font-weight: bolder;
+		}
+		.project-pic {
+			text-align: center;
+			.circle {
+				width: 90%;
+				height:0;
+				padding-bottom: 90%;
+				-moz-border-radius: 50%; 
+				-webkit-border-radius: 50%; 
+				border-radius: 50%;
+				background-size: cover;
+			}
+		}
+		.github-button {
+			justify-content: flex-start !important;
+		}
+	}
+}
+
 .github {
   background-color: lighten($light-gray, 35%);
   .row {
