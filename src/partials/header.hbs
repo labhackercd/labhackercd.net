@@ -53,3 +53,16 @@
     $('[data-toggle="popover"]').popover()
   });
 </script>
+
+<script>
+  $( document ).ready(function() {
+    var colors = ['#f16364', '#f58559', '#f9a43e', '#e4c62e', '#67bf74', '#59a2be', '#2093cd', '#ad62a7'];
+        
+    $('.slot').each(function() {
+      label = ($(this).find('.title').html()).charAt(0);      
+      $(this).find('.circle-label').html(label);      
+      var random = Math.floor(Math.random() * colors.length);      
+      $(this).find('.circle').css('background-color', colors[random]);
+    });
+  });
+</script>

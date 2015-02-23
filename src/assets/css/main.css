@@ -5325,6 +5325,8 @@ footer {
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); }
+  .hackathon-projects .slot .description:first-letter {
+    text-transform: capitalize; }
   .hackathon-projects .slot a.link-site {
     color: inherit;
     text-decoration: none; }
@@ -5352,6 +5354,16 @@ footer {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       background-size: cover; }
+      .hackathon-projects .slot .project-pic .circle div {
+        text-transform: uppercase;
+        float: left;
+        width: 100%;
+        padding-top: 50%;
+        line-height: 1em;
+        margin-top: -0.5em;
+        text-align: center;
+        font-size: 2em;
+        color: white; }
   .hackathon-projects .slot .github-button a {
     color: #8E8E8E; }
   .hackathon-projects .slot .github-button a:hover {

@@ -320,6 +320,9 @@ footer {
 		-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
 		-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
 		box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		.description:first-letter {
+			text-transform: capitalize;
+		}
 		a.link-site {
 			color: inherit;
 			text-decoration: none;
@@ -355,6 +358,17 @@ footer {
 				-webkit-border-radius: 50%; 
 				border-radius: 50%;
 				background-size: cover;
+				div {
+					text-transform: uppercase;
+					float: left;
+					width: 100%;
+					padding-top: 50%;
+					line-height: 1em;
+					margin-top: -0.5em;
+					text-align: center;
+					font-size: 2em;
+					color: white;
+				}
 			}
 		}
 		.github-button {
