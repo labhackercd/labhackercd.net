@@ -291,6 +291,97 @@ footer {
   }
 }
 
+.hackathon-about {
+	header {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-top: 20px;
+	}
+}
+
+.odd {
+	background-color: lighten($light-gray, 35%);
+}
+
+.pair {
+	background-color: lighten($light-gray, 28%);
+}
+
+.hackathon-projects {
+	header {
+		margin-bottom: 20px;
+	}
+	.slot {
+		margin-top: 20px;
+		padding: 10px;
+		width: 100%;
+		background-color: white;
+		-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+		.description:first-letter {
+			text-transform: capitalize;
+		}
+		a.link-site {
+			color: inherit;
+			text-decoration: none;
+		}
+		.left {
+			justify-content: flex-start !important;
+		}
+		.row {
+			position: relative;
+		}
+		.vertical-align {
+		  display: flex;
+		  flex-direction: row;
+		}
+
+		.vertical-align > [class^="col-"],
+		.vertical-align > [class*=" col-"] {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center; 
+		}
+		.title {
+			font-weight: bolder;
+			font-size: 1.5em;
+		}
+		.project-pic {
+			text-align: center;
+			.circle {
+				width: 80%;
+				height:0;
+				padding-bottom: 80%;
+				-moz-border-radius: 50%; 
+				-webkit-border-radius: 50%; 
+				border-radius: 50%;
+				background-size: cover;
+				div {
+					text-transform: uppercase;
+					float: left;
+					width: 100%;
+					padding-top: 50%;
+					line-height: 1em;
+					margin-top: -0.5em;
+					text-align: center;
+					font-size: 2em;
+					color: white;
+				}
+			}
+		}
+		.github-button {
+			a {
+				color: $light-gray;
+			}
+			a:hover {
+				color: darken($light-gray, 35%);
+			}
+		}
+	}
+}
+
 .github {
   background-color: lighten($light-gray, 35%);
   .row {
