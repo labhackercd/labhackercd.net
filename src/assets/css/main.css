@@ -5376,3 +5376,29 @@ footer {
   .github .text {
     text-align: justify;
     color: #8E8E8E; }
+
+.carousel {
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-position: 20%;
+  border-bottom: 10px solid #BCE328;
+  height: 400px; }
+  .carousel .container {
+    height: 400px; }
+  .carousel .right {
+    line-height: 400px; }
+    .carousel .right img {
+      width: 30px; }
+  .carousel .left {
+    line-height: 400px; }
+    .carousel .left img {
+      width: 30px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH"; }
+
+.carousel-inner {
+  overflow: visible; }
