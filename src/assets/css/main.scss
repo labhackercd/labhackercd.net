@@ -382,6 +382,8 @@ footer {
 	}
 }
 
+$jumbotron-height: 400px;
+
 .github {
   background-color: lighten($light-gray, 35%);
   .row {
@@ -391,4 +393,37 @@ footer {
     text-align: justify;
     color: $light-gray;
   }
+}
+
+.carousel {
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	background-position: 20%;
+	border-bottom: 10px solid #BCE328;
+	height: $jumbotron-height;
+	.container {
+		height: $jumbotron-height;
+	}
+	.right {
+		line-height: $jumbotron-height;
+		img {
+			width: 30px;
+		}
+	}
+	.left {
+		line-height: $jumbotron-height;
+		img {
+			width: 30px;
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			filter: FlipH;
+			-ms-filter: "FlipH";
+		}
+	}
+}
+
+.carousel-inner {
+	overflow: visible;
 }
