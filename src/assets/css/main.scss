@@ -58,11 +58,6 @@ body {
   font-family: 'Oswald';
 }
 
-hr {
-  background-color: $light-gray;
-  height: 2px;
-}
-
 a:hover {
   color: $dark-blue;
 }
@@ -284,7 +279,10 @@ footer {
     text-align: center;
     color: $light-gray;
     text-transform: uppercase;
-    margin-top: 40px;    
+    margin-top: 40px;
+    img {
+      width: 100px;
+    }
   }
   a:hover {
     text-decoration: none;
@@ -391,4 +389,101 @@ footer {
     text-align: justify;
     color: $light-gray;
   }
+}
+
+#edemocracia {
+  margin-top: 50px;
+}
+
+.project-section {
+  a {
+    color: inherit;
+    &:hover {
+      color: $light-gray;
+      text-decoration: none;
+    }
+  }    
+  .shortcuts {
+    font-size: 1.5em;
+    float: right;
+    .see {
+      font-weight: bold;
+      margin-left: 10px;      
+    }
+    i {
+      font-size: 1.3em;
+      margin-right: 10px;
+    }
+  }
+}
+
+//colors
+$color_tapa_approx: #777;
+
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+	.item {
+		height: 500px;
+		background-color: $color_tapa_approx;
+	}
+}
+.carousel-caption {
+	z-index: 10;
+}
+.marketing {
+	.col-lg-4 {
+		margin-bottom: 20px;
+		text-align: center;
+		p {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+	h2 {
+		font-weight: normal;
+	}
+}
+.featurette-divider {
+	margin: 80px 0;
+}
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+    margin-bottom: 30px;
+}
+@media(min-width: 768px) {
+	.navbar-wrapper {
+		margin-top: 20px;
+		.container {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		.navbar {
+			padding-right: 0;
+			padding-left: 0;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 4px;
+		}
+	}
+	.featurette-heading {
+		font-size: 50px;
+	}
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+}
+@media(min-width: 992px) {
+	.featurette-heading {
+		margin-top: 120px;
+	}
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 500px;
 }
