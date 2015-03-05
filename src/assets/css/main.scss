@@ -58,6 +58,10 @@ body {
   font-family: 'Oswald';
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 a:hover {
   color: $dark-blue;
 }
@@ -423,8 +427,6 @@ $jumbotron-height: 400px;
 $color_tapa_approx: #777;
 
 .carousel {
-	height: 500px;
-	margin-bottom: 60px;
     background-image: url('../img/header.jpg');
 	background-size: cover;
 	background-position: 20%;
@@ -452,7 +454,6 @@ $color_tapa_approx: #777;
 		}
 	}
 	.item {
-		height: 500px;
 		background-color: $color_tapa_approx;
 	}
 }
@@ -513,7 +514,11 @@ $color_tapa_approx: #777;
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	height: 500px;
+    height: $jumbotron-height;
+}
+
+.carousel-control.left, .carousel-control.right {
+  height: $jumbotron-height;
 }
 
 .carousel-inner {
