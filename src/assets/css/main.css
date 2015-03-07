@@ -5129,9 +5129,11 @@ button.close {
 body {
   font-family: 'Oswald'; }
 
-hr {
-  background-color: #8E8E8E;
-  height: 2px; }
+html, body {
+  overflow-x: hidden; }
+
+body {
+  overflow-y: hidden; }
 
 a:hover {
   color: #2F3F4E; }
@@ -5301,6 +5303,8 @@ footer {
   color: #8E8E8E;
   text-transform: uppercase;
   margin-top: 40px; }
+  .projetos .project-slot img {
+    width: 100px; }
 .projetos a:hover {
   text-decoration: none; }
 
@@ -5377,28 +5381,106 @@ footer {
     text-align: justify;
     color: #8E8E8E; }
 
+#edemocracia {
+  margin-top: 50px; }
+
+.project-section a {
+  color: inherit; }
+  .project-section a:hover {
+    color: #8E8E8E;
+    text-decoration: none; }
+.project-section .shortcuts {
+  font-size: 1.5em; }
+  .project-section .shortcuts.l {
+    float: left; }
+  .project-section .shortcuts.r {
+    float: right; }
+  .project-section .shortcuts .see {
+    font-weight: bold;
+    margin-left: 10px; }
+  .project-section .shortcuts i {
+    font-size: 1.3em;
+    margin-right: 10px; }
+
 .carousel {
-  background-image: url('../img/header.jpg');
   background-size: cover;
   background-position: 20%;
   border-bottom: 10px solid #BCE328;
   height: 400px; }
   .carousel .container {
     height: 400px; }
-  .carousel .right {
-    line-height: 400px; }
-    .carousel .right img {
-      width: 30px; }
-  .carousel .left {
-    line-height: 400px; }
-    .carousel .left img {
-      width: 30px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH"; }
+  .carousel img.right {
+    margin-top: 200px;
+    width: 30px; }
+  .carousel img.left {
+    margin-top: 200px;
+    width: 30px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; }
+  .carousel .item {
+    background-color: #2F3F4E;
+    background-size: cover;
+    background-position-x: center; }
+
+.carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  height: 350px; }
+  .carousel-caption img {
+    width: 150px !important; }
+  .carousel-caption .left-d {
+    text-align: left; }
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center; }
+  .marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px; }
+.marketing h2 {
+  font-weight: normal; }
+
+.featurette-divider {
+  margin: 80px 0; }
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 30px; }
+
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    margin-top: 20px; }
+    .navbar-wrapper .container {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .navbar-wrapper .navbar {
+      padding-right: 0;
+      padding-left: 0;
+      border-radius: 4px; }
+
+  .featurette-heading {
+    font-size: 50px; }
+
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4; }
+ }
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px; }
+ }
+
+.carousel-control.left, .carousel-control.right {
+  height: 400px; }
 
 .carousel-inner {
   overflow: visible; }

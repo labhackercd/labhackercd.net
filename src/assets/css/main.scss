@@ -62,6 +62,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+	overflow-y: hidden;
+}
+
 a:hover {
   color: $dark-blue;
 }
@@ -410,8 +414,13 @@ $jumbotron-height: 400px;
     }
   }    
   .shortcuts {
-    font-size: 1.5em;
-    float: right;
+	&.l {
+		float: left;
+	}
+	&.r {
+		float: right;
+	}
+    font-size: 1.5em;    
     .see {
       font-weight: bold;
       margin-left: 10px;      
@@ -427,7 +436,7 @@ $jumbotron-height: 400px;
 $color_tapa_approx: #777;
 
 .carousel {
-    background-image: url('../img/header.jpg');
+    //background-image: url('../img/header.jpg');
 	background-size: cover;
 	background-position: 20%;
 	border-bottom: 10px solid #BCE328;
@@ -435,30 +444,41 @@ $color_tapa_approx: #777;
 	.container {
 		height: $jumbotron-height;
 	}
-	.right {
-		line-height: $jumbotron-height;
-		img {
-			width: 30px;
-		}
+	img.right {
+		margin-top: $jumbotron-height/2;
+		width: 30px;
 	}
-	.left {
-		line-height: $jumbotron-height;
-		img {
-			width: 30px;
-			-moz-transform: scaleX(-1);
-			-o-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
-			filter: FlipH;
-			-ms-filter: "FlipH";
-		}
+	img.left {		
+		margin-top: $jumbotron-height/2;
+		width: 30px;
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
 	}
-	.item {
-		background-color: $color_tapa_approx;
+	.item {		
+		background-color: $dark-blue;
+		background-size: cover;
+		background-position-x: center;
 	}
 }
 .carousel-caption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	z-index: 10;
+	height: 350px;
+	img {
+		width: 150px !important;
+
+	}
+	.left-d {
+		text-align: left;
+	}
+	.jumb-grid {
+	}
 }
 .marketing {
 	.col-lg-4 {
@@ -509,13 +529,13 @@ $color_tapa_approx: #777;
 		margin-top: 120px;
 	}
 }
-.carousel-inner > .item > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-    height: $jumbotron-height;
-}
+//.carousel-inner > .item > img {
+//	position: absolute;
+//	top: 0;
+//	left: 0;
+//	min-width: 100%;
+//    height: $jumbotron-height;
+//}
 
 .carousel-control.left, .carousel-control.right {
   height: $jumbotron-height;
