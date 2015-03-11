@@ -8,5 +8,5 @@
   href: "#painel"
   image: "<%= assets %>/img/projects/icon-painel-social.png"
 - title: "Hackathons"
-  href: "/hackathon.html#hackathons"
+  href: "#hackathons"
   image: "<%= assets %>/img/projects/icon_hackathon.png"
