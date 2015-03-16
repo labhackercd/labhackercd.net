@@ -10,3 +10,6 @@
 - title: "Hackathons"
   href: "#hackathons"
   image: "<%= assets %>/img/projects/icon_hackathon.png"
+- title: "Mapa Participativo"
+  href: "#mapa"
+  image: "<%= assets %>/img/projects/icon-mapa-participativo.png"
