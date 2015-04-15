@@ -64,5 +64,11 @@
       var random = Math.floor(Math.random() * colors.length);      
       $(this).find('.circle').css('background-color', colors[random]);
     });
+    
+    $('.blog-post').each(function() {
+      var random = Math.floor(Math.random() * colors.length);      
+      $(this).css('background-color', colors[random]);
+    });
+    
   });
 </script>

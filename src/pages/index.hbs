@@ -24,14 +24,15 @@ title: Início
 <section class="blog">
   <div class="container">
     <header>
-      <a class="more" href="//blog.labhackercd.net/">+ Ver mais</a>
+      <a class="more" href="//blog.labhackercd.net/"><i class="fa fa-plus-circle"></i> Ver mais</a>
       <h1>Últimas Notícias</h1>
     </header>
     <div class="row">
       {{#each (first blog 5)}}
       <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
         <a target="_blank" href="{{link}}">
-          <div class="post-slot" style="background-image: url('{{this.[rss:image].[#]}}');">
+          <div class="blog-post">
+            <div class="background-image" style="background-image: url('{{this.[rss:image].[#]}}');"></div>
             <div class="title">{{title}}</div>
           </div>
         </a>
