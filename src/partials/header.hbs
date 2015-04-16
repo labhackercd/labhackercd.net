@@ -23,7 +23,7 @@
 <!-- Favicons -->
 <link rel="apple-touch-icon-precomposed"
     sizes="144x144" href="{{ assets }}/ico/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="{{ assets }}/ico/favicon.png">
+<link rel="shortcut icon" href="{{ assets }}/img/favicon.ico" type="image/x-icon" />
 
 <!--[if lt IE 9]><script src="{{ assets }}/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -69,6 +69,19 @@
       var random = Math.floor(Math.random() * colors.length);      
       $(this).css('background-color', colors[random]);
     });
+    
+    var btt_trigger = 680;
+    
+    $(window).scroll(function() {
+
+      if(($(window).scrollTop()  > btt_trigger) && $('.btt').is(":hidden")) {
+        $('.btt').fadeIn();
+      } else if (($(window).scrollTop()  <= btt_trigger) && $('.btt').is(":visible")) {
+        $('.btt').fadeOut();
+      }
+      
+    });
+    
     
   });
 </script>

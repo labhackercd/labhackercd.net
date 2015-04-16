@@ -49,6 +49,14 @@ module.exports = function(grunt) {
           dest: './build/assets/'
         }]
       },
+      files: {
+        files: [{
+          expand: true,
+          cwd: './src/assets/',
+          src: './files/**',
+          dest: './build/assets/'
+        }]
+      },
       'bootstrap-js': {
         files: [{
           expand: true,
