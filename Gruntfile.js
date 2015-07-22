@@ -1,7 +1,11 @@
+var moment = require('moment');
+
 module.exports = function(grunt) {
   'use strict';
 
   grunt.initConfig({
+    pc: grunt.file.readJSON("config.json"),
+
     assemble: {
       options: {
         flatten: true,
@@ -118,19 +122,52 @@ module.exports = function(grunt) {
           interrupt: true
         }
       }
+    },
+
+    shell: {
+      upcoming_events: {
+        command: function() {
+          // Function because strings won't work properly. Don't ask me why.
+          return [
+            '<%= pc.calendar.extractor %>',
+            '--service "<%= pc.calendar.endpoint %>"',
+            '--username "<%= pc.calendar.username %>"',
+            '--password "<%= pc.calendar.password %>"',
+            '--start ' + moment().format('YYYY-MM-DD'),
+            '--end ' + moment().add(grunt.config.get('pc.calendar.radius', 30), 'days').format('YYYY-MM-DD'),
+            '--output ./src/feeds/upcoming_events.json'].join(' ');
+        }
+      },
+      recent_events: {
+        command: function() {
+          // Function because strings won't work properly. Don't ask me why.
+          return [
+            '<%= pc.calendar.extractor %>',
+            '--service "<%= pc.calendar.endpoint %>"',
+            '--username "<%= pc.calendar.username %>"',
+            '--password "<%= pc.calendar.password %>"',
+            '--start ' + moment().subtract(grunt.config.get('pc.calendar.radius', 30), 'days').format('YYYY-MM-DD'),
+            '--end ' + moment().format('YYYY-MM-DD'),
+            '--output ./src/feeds/recent_events.json'].join(' ');
+        }
+      }
     }
   });
 
+
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('build', [
+    'shell:upcoming_events',
+    'shell:recent_events',
     'assemble',
     'sass',
-    'copy',
+    'copy'
   ]);
 
   grunt.registerTask('serve', [

@@ -22,6 +22,11 @@
     "grunt-contrib-connect": "^0.9.0",
     "grunt-contrib-copy": "~0.7.0",
     "grunt-contrib-sass": "~0.8.1",
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt-contrib-watch": "~0.6.1",
+    "handlebars-helper-moment": "~0.2.0"
+  },
+  "dependencies": {
+    "grunt-shell": "~1.1.2",
+    "grunt-if": "~0.1.5"
   }
 }

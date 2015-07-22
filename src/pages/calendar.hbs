@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <h2>Próximos eventos <small>(60 dias)</small></h2>
+            <div class="list-group">
+              {{#each upcoming_events}}
+                  <a href="#" class="list-group-item">
+                      <h4 class="list-group-item-heading">
+                          <span class="badge">{{{start}}}</span>
+                          {{{subject}}}
+                      </h4>
+                  </a>
+              {{/each}}
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Eventos anteriores <small>(60 dias)</small></h2>
+            <div class="list-group">
+              {{#each upcoming_events}}
+                  <a href="#" class="list-group-item">
+                      <h4 class="list-group-item-heading">
+                          <span class="badge">{{{start}}}</span>
+                        {{{subject}}}
+                      </h4>
+                  </a>
+              {{/each}}
+            </div>
+        </div>
+    </div>
+</section>

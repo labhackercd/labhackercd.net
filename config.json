@@ -1,0 +1,9 @@
+{
+  "calendar": {
+    "extractor": "/home/dirley/.virtualenvs/piwipi/bin/piwipi",
+    "endpoint": "https://ce.camara.leg.br/EWS/Exchange.asmx",
+    "username": "\\labhacker",
+    "password": "12345678",
+    "radius": 60
+  }
+}
