@@ -1,109 +1,129 @@
----
-title: Início
----
+--- title: Início ---
 
 <section class="projetos">
-  <div class="container">
-    <div class="row">
-      <div class="projects-menu">
-      {{#each projects}}
-        <div class="item">
-        <a href="{{{href}}}">
-          <div class="project-slot">
-            <img src="{{{image}}}" />
-            <h4>{{{title}}}</h4>
-          </div>
-        </a>
+    <div class="container">
+        <div class="row">
+            <div class="projects-menu">
+                {{#each projects}}
+                <div class="item">
+                    <a href="{{{href}}}">
+                        <div class="project-slot">
+                            <img src="{{{image}}}" />
+                            <h4>{{{title}}}</h4>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
         </div>
-      {{/each}}
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="blog">
-  <div class="container">
-    <header>
-      <a class="more" href="//blog.labhackercd.net/"><i class="fa fa-plus-circle"></i> Ver mais</a>
-      <h1>Últimas Notícias</h1>
-    </header>
-    <div class="row">
-      {{#each (first blog 5)}}
-      <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
-        <a target="_blank" href="{{link}}">
-          <div class="blog-post">
-            <div class="background-image" style="background-image: url('{{this.[rss:image].[#]}}');"></div>
-            <div class="title">{{title}}</div>
-          </div>
-        </a>
-      </div>
-      {{/each}}
+    <div class="container">
+        <header>
+            <a class="more" href="//blog.labhackercd.net/"><i class="fa fa-plus-circle"></i> Ver mais</a>
+            <h1>Últimas Notícias</h1>
+        </header>
+        <div class="row">
+            {{#each (first blog 5)}}
+            <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
+                <a target="_blank" href="{{link}}">
+                    <div class="blog-post">
+                        <div class="background-image" style="background-image: url('{{this.[rss:image].[#]}}');"></div>
+                        <div class="title">{{title}}</div>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+        </div>
     </div>
-  </div>
+</section>
+
+
+<section class="project-section" id="wikilegis">
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Wikilegis</h2>
+                <p class="lead">Wikilegis é um projeto que permite os cidadãos sugerir modificações em projetos de lei.</p>
+                <p class="shortcuts l"><a target="_blank" href="https://github.com/labhackercd/wikilegis"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://wikilegis.labhackercd.net/"><span class="see">Ver projeto</span></a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/wikilegis_projeto.png">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
 </section>
 
 <section class="project-section" id="edemocracia">
-  <div class="container">
-<div class="row featurette">        
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/e_democracia_projeto.png">
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/e_democracia_projeto.png">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">e-Democracia</h2>
+                <p class="lead">O portal e-Democracia da Câmara dos Deputados tem o objetivo de aprimorar o relacionamento entre cidadãos e deputados e ampliar a transparência no processo legislativo. Para tanto, dispõe de diversas ferramentas que favorecem a participação social, como, por exemplo, fóruns, wikilegis, biblioteca virtual e audiência pública interativa.</p>
+                <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/edemocracia"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://edemocracia.camara.gov.br/"><span class="see">Ver projeto</span></a>
+                </p>
+            </div>
         </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">e-Democracia</h2>
-          <p class="lead">O portal e-Democracia da Câmara dos Deputados tem o objetivo de aprimorar o relacionamento entre cidadãos e deputados e ampliar a transparência no processo legislativo. Para tanto, dispõe de diversas ferramentas que favorecem a participação social, como, por exemplo, fóruns, wikilegis, biblioteca virtual e audiência pública interativa.</p>
-          <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/edemocracia"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://edemocracia.camara.gov.br/"><span class="see">Ver projeto</span></a></p>
-        </div>        
-      </div>
-      <hr class="featurette-divider">
-  </div>
+        <hr class="featurette-divider">
+    </div>
 </section>
 
 <section class="project-section" id="retorica">
-  <div class="container">
-<div class="row featurette">        
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Retórica Parlamentar</h2>
-          <p class="lead">O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele.</p>
-          <p class="shortcuts l"><a target="_blank" href="https://github.com/labhackercd/Retorica/tree/integration"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://retorica.labhackercd.net/"><span class="see">Ver projeto</span></a></p>
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Retórica Parlamentar</h2>
+                <p class="lead">O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele.</p>
+                <p class="shortcuts l"><a target="_blank" href="https://github.com/labhackercd/Retorica/tree/integration"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://retorica.labhackercd.net/"><span class="see">Ver projeto</span></a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/retorica_projeto.png">
+            </div>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/retorica_projeto.png">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-  </div>
+        <hr class="featurette-divider">
+    </div>
 </section>
 
 <section class="project-section" id="painel">
-  <div class="container">
-<div class="row featurette">  
-		<div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/painel_social_projeto.png">
-        </div>      
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Painel Social</h2>
-          <p class="lead">O projeto Painel Social consiste em um piloto para a visualização de informações legislativas e de redes sociais. O principal público alvo são os órgãos internos da Câmara dos Deputados, tais como Comissões e Lideranças.</p>
-          <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/painel-social/"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://painelsocial.labhackercd.net/"><span class="see">Ver projeto</span></a></p>
-        </div>        
-      </div>
-      <hr class="featurette-divider">
-  </div>
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/painel_social_projeto.png">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Painel Social</h2>
+                <p class="lead">O projeto Painel Social consiste em um piloto para a visualização de informações legislativas e de redes sociais. O principal público alvo são os órgãos internos da Câmara dos Deputados, tais como Comissões e Lideranças.</p>
+                <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/painel-social/"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://painelsocial.labhackercd.net/"><span class="see">Ver projeto</span></a>
+                </p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
 </section>
 
 <section class="project-section" id="hackathons">
-  <div class="container">
-<div class="row featurette">         
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Hackathons</h2>
-          <p class="lead">O Hackathon é uma maratona que reúne hackers, programadores, desenvolvedores e inventores para criar projetos que transformem informações de interesse público em soluções digitais, acessíveis a todos os cidadãos. A Câmara dos Deputados promoveu duas edições. A primeira, realizada em 2013, desenvolveu a temática transparência legislativa e participação popular, e a segunda, em 2014, tratou de gênero e cidadania.</p>
-          <p class="shortcuts l"><a href="/hackathon.html#hackathons"><span><b>Conheça nossos Hackathons</b></span></a></p>
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Hackathons</h2>
+                <p class="lead">O Hackathon é uma maratona que reúne hackers, programadores, desenvolvedores e inventores para criar projetos que transformem informações de interesse público em soluções digitais, acessíveis a todos os cidadãos. A Câmara dos Deputados promoveu duas edições. A primeira, realizada em 2013, desenvolveu a temática transparência legislativa e participação popular, e a segunda, em 2014, tratou de gênero e cidadania.</p>
+                <p class="shortcuts l"><a href="/hackathon.html#hackathons"><span><b>Conheça nossos Hackathons</b></span></a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/hackatons_projeto.png">
+            </div>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/hackatons_projeto.png">
-        </div>
-      </div>
-    <hr class="featurette-divider">
-  </div>
+        <hr class="featurette-divider">
+    </div>
 </section>
 
 <!--<section class="project-section" id="mapa">
@@ -122,8 +142,8 @@ title: Início
 </section>-->
 
 <a href="#">
-  <div class="btt">
-    <div><i class="fa fa-angle-up fa-2x"></i></div>
-  </div>
+    <div class="btt">
+        <div><i class="fa fa-angle-up fa-2x"></i>
+        </div>
+    </div>
 </a>
-

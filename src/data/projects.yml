@@ -1,3 +1,6 @@
+- title: "Wikilegis"
+  href: "#wikilegis"
+  image: "<%= assets %>/img/projects/icon_wikilegis.png"
 - title: "E-Democracia"
   href: "#edemocracia"
   image: "<%= assets %>/img/projects/icon-e-democracia.png"
