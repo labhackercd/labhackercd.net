@@ -682,6 +682,13 @@ $color_tapa_approx: #777;
 }
 
 .labhacker-team {
+    @media screen and (max-width: 992px) {
+        text-align: center;
+        .avatar {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     margin-top: 50px;
     h2 {
         margin-bottom: 50px;
