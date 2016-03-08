@@ -1,0 +1,58 @@
+- 
+  name: "Cristiano Ferri Soares de Faria"
+  photo: "<%= assets %>/img/team/cristiano.png"
+  description: "Diretor - FC-03"
+- 
+  name: "Rogério Scheidemantel"
+  photo: "<%= assets %>/img/team/rogerio.png"
+  description: "Diretor-Adjunto - FC-02"
+- 
+  name: "Daniel Shim De Sousa Esashika"
+  photo: "<%= assets %>/img/team/daniel.png"
+  description: "Gerente de projetos experimentais - FC-01"
+- 
+  name: "Pedro Guerra Brandão"
+  photo: "<%= assets %>/img/team/pedro.png"
+  description: "Gestor de tecnologia"
+- 
+  name: "Thiago Lopes Carneiro"
+  photo: "<%= assets %>/img/team/thiago.png"
+  description: "Gestor de projetos de participação digital"
+- 
+  name: "Simone Ravazzolli"
+  photo: "<%= assets %>/img/team/simone.png"
+  description: "Gestora de comunicação e planejamento - FC-01"
+- 
+  name: "Walternor Brandão"
+  photo: "<%= assets %>/img/team/walter.png"
+  description: "Gestor do Portal e-Democracia - FC-01"
+- 
+  name: "Luciana De Souza Ribeiro"
+  photo: "<%= assets %>/img/team/luciana.png"
+  description: "Assessora para o Portal e-Democracia"
+- 
+  name: "Cristiana de Araújo e Borges"
+  photo: "<%= assets %>/img/team/cristiana.png"
+  description: "Assessora para projetos colaborativos e articulação de redes"
+- 
+  name: "Diego Cavalcanti Cunha"
+  photo: "<%= assets %>/img/team/diegudo.png"
+  description: "Assessor para o Portal e-Democracia, Redator, Tradutor"
+- 
+  name: "Dirley Rodrigues Lima da Silva"
+  photo: "<%= assets %>/img/team/dirley.png"
+  description: "Desenvolvedor e administrador de sistemas"
+- 
+  name: "Erivânio Rodolfo Vasconcelos de Souza"
+  photo: "<%= assets %>/img/team/ericonan.png"
+  description: "Desenvolvedor"
+- 
+  name: "Fellype do Nascimento Silva"
+  photo: "<%= assets %>/img/team/fellype.png"
+  description: "Desenvolvedor de interfaces de usuário"
+- 
+  name: "João Lúcio Dreyer Lomonaco"
+  photo: "<%= assets %>/img/team/joao.png"
+  description: "Designer, Webdesigner, Publicitário, Ilustrador, Videografista"
+
+
