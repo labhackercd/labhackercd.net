@@ -17,6 +17,9 @@
         <li><a href="//blog.labhackercd.net/">Blog</a></li>        
         <li{{#is data.section "about"}} class="active"{{/is}}>
           <a href="{{ relative page.dest "about.html"}}">Sobre</a>
+        </li>        
+        <li{{#is data.section "calendar"}} class="active"{{/is}}>
+          <a href="{{ relative page.dest "calendar.html"}}">Agenda</a>
         </li>
         <li class="separator">&nbsp</li>
         <li>
