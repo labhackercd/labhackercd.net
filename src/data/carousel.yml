@@ -1,0 +1,23 @@
+- 
+  name: "e-democracia móvel <sup>beta</sup>"
+  description: "A participação em suas mãos! Teste o novo aplicativo e colabore!"
+  img: "<%= assets %>/img/carousel/celphone.png"
+  link: "https://play.google.com/store/apps/details?id=net.labhackercd.nhegatu"
+- 
+  name: "Projetos do Hackathon!"
+  description: "Conheca mais sobre o evento e os projetos produzidos e apresentados nos Hackathons do LabHacker da Camara dos Deputados"
+  img: "<%= assets %>/img/carousel/hackathons-icon.png"
+  background: "<%= assets %>/img/carousel/hackathons-bg.jpg"
+  link: "/hackathon.html#hackathons"
+- 
+  name: "Portal e-Democracia"
+  description: "Conheça o Portal e-Democracia! Participação virtual, cidadania real!"
+  img: "<%= assets %>/img/carousel/icone_e_democracia.png"
+  background: "<%= assets %>/img/carousel/democracia-bg.jpg"
+  link: "http://edemocracia.camara.gov.br/"
+- 
+  name: "Revista LabHacker"
+  description: "Leia sobre as ações e projetos do Laboratório Hacker!"
+  img: "<%= assets %>/img/carousel/icone_revista.png"
+  background: "<%= assets %>/img/carousel/revista-bg.jpg"
+  link: "<%= assets %>/files/revista_labhacker_2ed.pdf"

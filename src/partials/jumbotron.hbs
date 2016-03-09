@@ -3,78 +3,28 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    {{#each carousel }}
+    <li data-target="#myCarousel" data-slide-to="{{@index}}" {{#if @first}}class="active"{{/if}}></li>
+    {{/each}}
   </ol>
   <div class="carousel-inner" role="listbox">
-
-    <div class="item active lancamento">
+    {{#each carousel }}
+    <div class="item {{#if @first}}active{{/if}} {{#unless background}}lancamento{{/unless}}" {{#if background}}style="background-image: url('{{ background }}');"{{/if}}>
       <div class="container">
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=net.labhackercd.nhegatu">
+        <a target="_blank" href="{{ link }}">
           <div class="carousel-caption">
             <div class="cover">
-              <img src="assets/img/carousel/celphone.png" />
+              <img src="{{ img }}" />
             </div>
             <div class="description">
-              <h1>e-democracia móvel <sup>beta</sup></h1>
-              <p>A participação em suas mãos! Teste o novo aplicativo e colabore!</p>
+              <h1>{{{ name }}}</h1>
+              <p>{{{ description }}}</p>
             </div>
           </div>
         </a>
       </div>
     </div>
-
-    <div class="item" style="background-image: url('assets/img/carousel/hackathons-bg.jpg');">
-      <div class="container">
-        <a href="/hackathon.html#hackathons">
-          <div class="carousel-caption">
-            <div class="cover">
-              <img src="assets/img/carousel/hackathons-icon.png" />
-            </div>
-            <div class="description">
-              <h1>Projetos do Hackathon!</h1>
-              <p>Conheca mais sobre o evento e os projetos produzidos e apresentados nos Hackathons do LabHacker da Camara dos Deputados</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="item" style="background-image: url('assets/img/carousel/democracia-bg.jpg');">
-      <div class="container">
-        <a target="_blank" href="http://edemocracia.camara.gov.br/">
-          <div class="carousel-caption">
-            <div class="cover">
-              <img src="assets/img/carousel/icone_e_democracia.png" />
-            </div>
-            <div class="description">
-              <h1>Portal e-Democracia</h1>
-              <p>Conheça o Portal e-Democracia! Participação virtual, cidadania real!</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="item" style="background-image: url('assets/img/carousel/revista-bg.jpg');">
-      <div class="container">
-        <a target="_blank" href="assets/files/revista_labhacker_2ed.pdf">
-          <div class="carousel-caption">
-            <div class="cover">
-              <img src="assets/img/carousel/icone_revista.png" />
-            </div>
-            <div class="description">
-              <h1>Revista LabHacker</h1>
-              <p>Leia sobre as ações e projetos do Laboratório Hacker!</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-
+    {{/each}}
   </div>
 
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
