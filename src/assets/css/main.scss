@@ -67,8 +67,16 @@ section {
     padding-top: 20px;
     padding-bottom: 40px;
     .info {
-        margin-top: 20px;
+
         line-height: 20px;
+        margin-top: 10px;
+        text-align: center;
+        display: inline-block;
+
+        p {
+            display: inline-block;
+            margin-right: 35px;
+        }
         i {
             margin-right: 10px;
         }
@@ -259,6 +267,10 @@ footer {
         
         > .img {
             width: 200px;
+
+            @media screen and (max-width: 767px) {
+                width: 110px;
+            }
         }
     }
 
@@ -266,6 +278,12 @@ footer {
         color: white;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
         width: 500px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 2em;
+            width: auto;
+            text-align: center;
+        }
   
         &.-about {
             color: #1E293B;
@@ -745,6 +763,7 @@ $color_tapa_approx: #777;
     }
     .card {
         margin-bottom: 20px;
+        min-height: 90px;
     }
     .avatar {
         width: 80px;
