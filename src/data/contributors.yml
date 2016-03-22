@@ -54,5 +54,7 @@
   name: "João Lúcio Dreyer Lomonaco"
   photo: "<%= assets %>/img/team/joao.png"
   description: "Designer, Webdesigner, Publicitário, Ilustrador, Videografista"
-
-
+- 
+  name: "Stephane Paula Sousa Prates"
+  photo: "<%= assets %>/img/team/steph.png"
+  description: "Estagiária de Comunicação e Jornalismo"
