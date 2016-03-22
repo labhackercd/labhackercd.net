@@ -47,8 +47,8 @@
   photo: "<%= assets %>/img/team/ericonan.png"
   description: "Desenvolvedor"
 - 
-  name: "Fellype do Nascimento Silva"
-  photo: "<%= assets %>/img/team/fellype.png"
+  name: "Caio Viotti"
+  photo: "<%= assets %>/img/team/caio.png"
   description: "Desenvolvedor de interfaces de usuário"
 - 
   name: "João Lúcio Dreyer Lomonaco"
