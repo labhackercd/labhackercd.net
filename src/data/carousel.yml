@@ -1,6 +1,6 @@
 - 
   background: "<%= assets %>/img/carousel/paradahacker.jpg"
-  link: "https://play.google.com/store/apps/details?id=net.labhackercd.nhegatu"
+  link: "http://blog.labhackercd.net/2016/5/3/blockchain-na-camara-dos-deputados-rola/"
 - 
   name: "e-democracia móvel <sup>beta</sup>"
   description: "A participação em suas mãos! Teste o novo aplicativo e colabore!"
