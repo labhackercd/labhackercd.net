@@ -1,4 +1,7 @@
 - 
+  background: "<%= assets %>/img/carousel/paradahacker.jpg"
+  link: "https://play.google.com/store/apps/details?id=net.labhackercd.nhegatu"
+- 
   name: "e-democracia móvel <sup>beta</sup>"
   description: "A participação em suas mãos! Teste o novo aplicativo e colabore!"
   img: "<%= assets %>/img/carousel/celphone.png"
