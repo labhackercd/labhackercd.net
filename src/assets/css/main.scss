@@ -1279,7 +1279,9 @@ section .more {
     a {
         &:hover {
             .blog-post {
-                -webkit-filter: brightness(1.2);
+                .background-image {
+                    opacity: 0.8;
+                }
             }
         }
     }
@@ -1293,12 +1295,13 @@ section .more {
     .background-image {
         background-size: cover;
         display: block;
-        -webkit-filter: brightness(0.4) grayscale(1) opacity(0.6);
         margin-top: 30px;
         height: 300px;
         left: 0;
         right: 0;
         z-index: 1;
+        opacity: 1;
+        transition: opacity 0.3s ease;
     }
     .title {
         position: absolute;
