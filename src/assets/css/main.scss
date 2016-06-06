@@ -475,6 +475,92 @@ footer {
 
 }
 
+.what-is {
+    &__video-wrapper {
+        background-color: $dark-blue;
+    }
+
+    &__video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        margin: 5rem 0;
+        height: 0;
+    }
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__info-wrapper {
+        margin-top: 5rem;
+    }
+
+    &__extra-info {
+        text-align: center;
+        margin-top: 5rem;
+        background-color: $dark-blue;
+        padding: 5rem 0;
+
+        .extra-info__item {
+            display: inline-block;
+            margin: 2rem 6rem;
+            vertical-align: top;
+        }
+
+        .extra-info__icon-container {
+            display: inline-block;
+            border: 0.7rem solid #cfe41b;
+            border-radius: 50%;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .extra-info__icon {
+            font-size: 5.2rem;
+            height: 8rem;
+            width: 8rem;
+            line-height: 8rem;
+        }
+
+        .extra-info__info {
+            font-size: 2rem;
+            color: white;
+
+            &--link {
+                position: relative;
+                color: #cfe41b;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 5px;
+                    width: 100%;
+                    background-color: white;
+                    bottom: -0.5rem;
+                    right: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);  
+                }
+            }
+        }
+
+        .extra-info__item--link:hover .extra-info__info--link, .extra-info__item--link:focus .extra-info__info--link {
+            color: #E0DF18;
+
+            &::after {
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+            }
+        } 
+    }
+}
 .masthead {
     height: 300px;
     background-color: red;
