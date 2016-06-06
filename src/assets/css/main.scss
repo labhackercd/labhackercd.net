@@ -1203,21 +1203,31 @@ section .more {
 
 .masthead {
     height: 300px;
-    background-color: red;
     margin-bottom: 50px;
     border-bottom: 10px solid #BCE328;
     box-sizing: content-box;
     margin-top: -20px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     
     &.-about {
-        background: url(../img/headers/about-header-bg.jpg);
+        background-image: url(../img/headers/about-header.jpg);
+        margin-bottom: 0;
     }
 
     &.-calendar {
-        background: url(../img/headers/calendar-header-bg.jpg);
+        background-image: url(../img/headers/calendar-header.jpg);
     }
+
+    &.-hackathon {
+        background-image: url(../img/headers/hackathon-header.jpg);
+    }
+
+    &.-activities {
+        background-image: url(../img/headers/activities-header.jpg);
+    }
+
 
     .masthead-content {
         display: flex;
@@ -1244,7 +1254,7 @@ section .more {
 
     .masthead-title {
         color: white;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
         width: 500px;
 
         @media screen and (max-width: 992px) {
@@ -1257,42 +1267,12 @@ section .more {
             color: #1E293B;
             text-shadow: none;
         }
-    }
 
-}
-
-.top {
-    height: 400px;
-    background-image: url('../img/header.jpg');
-    background-size: cover;
-    background-position: 20%;
-    border-bottom: 10px solid #BCE328;
-    text-align: center;
-    color: white;
-    position: relative;
-    .content {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 50%;
-        height: 50%;
-        margin: auto;
-        h4 {
-            margin-top: 20px;
+        &.-activities {
+            color: white;
         }
     }
-    .btn-primary {
-        background-color: $yellow;
-        color: $dark-blue;
-        border-color: darken($yellow, 20%);
-        margin-top: 20px;
-        &:hover {
-            background-color: darken($yellow, 5%);
-            border-color: darken($yellow, 20%);
-        }
-    }
+
 }
 
 .blog {
@@ -1481,6 +1461,9 @@ $jumbotron-height: 300px;
             font-size: 1.3em;
             margin-right: 10px;
         }
+    }
+    header {
+        margin-bottom: 6rem;
     }
 }
 
