@@ -43,6 +43,96 @@
 // Utility classes
 @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
 @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
+
+@mixin textGlitch($name, $intensity, $textColor, $background, $duration1, $pause1, $duration2, $pause2, $highlightColor1, $highlightColor2, $width, $height) {
+  
+  color: $textColor;
+  position: relative;
+  $steps: $intensity;
+  
+  // Ensure the @keyframes are generated at the root level
+  @at-root {
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 1 through $steps {
+          #{percentage($i*(1/$steps))} {
+            clip: rect(
+              random($height)+px,
+              $width+px,
+              random($height)+px,
+              0
+            );
+          }
+        }
+      }
+    }
+  }
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $background;
+    clip: rect(0, 0, 0, 0); 
+  }
+  &::after {
+    left: 17px;
+    text-shadow: -8px 0 $highlightColor1;
+    animation: #{$name}-anim-1 $duration1 $pause1 infinite linear alternate-reverse;
+  }
+  &::before {
+    left: -12px;
+    text-shadow: 12px 0 $highlightColor2; 
+    animation: #{$name}-anim-2 $duration2 $pause2 infinite linear alternate-reverse;
+  }
+  
+}
+
+@mixin imgGlitch($name, $intensity, $width, $height, $top, $left) {
+  
+  $steps: $intensity;
+  
+  // Ensure the @keyframes are generated at the root level
+  @at-root {
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 0 through $steps {
+          #{percentage($i*(1/$steps))} {
+            clip: rect(
+              random($height)+px,
+              $width+px,
+              random($height)+px,
+              0
+            );
+          }
+        }
+      }
+    }
+  }
+  
+  > img {
+    position: absolute;
+    top: $top+px;
+    left: $left+px;
+  }
+  > img:nth-child(2),
+  > img:nth-child(3){
+    clip: rect(0, 0, 0, 0); 
+  }
+  > img:nth-child(2) {
+    left: ($left + 2) + px;
+    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  }
+  > img:nth-child(3) {
+    left: ($left - 2) + px;
+    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+  }
+}
+
 $light-gray: #8E8E8E;
 $dark-blue: #2F3F4E;
 $yellow: #BCE328;
@@ -231,6 +321,158 @@ footer {
             text-transform: uppercase;
         }
     }
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    min-height: 630px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #141d2d;
+    background-image: url(../img/bg-lab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 85% 30%;
+
+    @media screen and (max-width: 769px) {
+        height: auto;
+        min-height: auto;
+    }
+
+    &__info {
+        width: 100%;
+        min-height: 450px;
+        padding: 0 7.5%;
+        z-index: 1;
+    }
+
+    &__text-container {
+        font-family: 'Open Sans Condensed';
+        position: relative;
+        margin-top: 4.5rem;
+        padding-left: 2.5rem;
+        font-size: 3.8rem;
+        line-height: 100%;
+
+        @media screen and (max-width: 769px) {
+            font-size: 2.7rem;
+            padding-left: 1.5rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            margin: auto;
+            top: -0.5rem;
+            bottom: 0;
+            left: 0;
+            width: 0.8rem;
+            height: 90%;
+            background-color: #CFE41B;
+
+            @media screen and (max-width: 769px) {
+                width: 0.6rem;
+            }
+        }
+
+    }
+
+    &__text {
+        
+        font-weight: 700;
+        color: whitesmoke;
+        position: relative;
+        
+
+        .text__phrase {
+            display: inline-block;
+            @include textGlitch("text__phrase", 10, whitesmoke, transparent, 0.5s, 5.3s, 0.5s, 5.4s, red, green, 1500, 100);
+        }
+
+        .text__blink-dot {
+            color: whitesmoke;
+            margin-left: 0.25rem;
+            visibility: hidden;
+            white-space: nowrap;
+
+            @keyframes blink {
+                0%   {visibility: visible}
+                50% {visibility: hidden}
+            }
+            animation: blink 1.2s infinite; 
+        }
+    }
+
+    &__logo {
+        width: 500px;
+        max-width: 100%;
+        margin-top: 4rem;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+        font-size: 80%;
+        font-weight: 600;
+        color: #E0DF18;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: white;
+            bottom: 0;
+            right: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);  
+        }
+
+        &:hover, &:focus {
+            color: #E0DF18;
+            text-decoration: none;
+
+            &::after {
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+            }
+        }
+    }
+
+    &__scanlines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        &::before, &::after {
+            content: '';
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-image: url(../img/scanlines.png);
+            background-size: 100% 100%;
+            opacity: 0.2;
+            animation: scrollDown 10s linear infinite;
+
+            @keyframes scrollDown {
+                0% {transform: translateY(-100%);}
+                100% {transform: translateY(0%);}
+            }
+        }
+    }
+
 }
 
 .masthead {

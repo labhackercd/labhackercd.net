@@ -1,150 +1,66 @@
---- title: Início ---
-{{> jumbotron }}
+<section class="about">
+  <div class="about__scanlines"></div>
+  <div class="about__info">
+    <img class="about__logo" src="assets/img/labhacker.png">
 
-<section class="projetos">
-    <div class="container">
-        <div class="row">
-            <div class="projects-menu">
-                {{#each projects}}
-                <div class="item">
-                    <a href="{{{href}}}">
-                        <div class="project-slot">
-                            <img src="{{{image}}}" />
-                            <h4>{{{title}}}</h4>
-                        </div>
-                    </a>
-                </div>
-                {{/each}}
-            </div>
-        </div>
+    <div class="about__text-container">
+        <p class="about__text">
+          <span class="text__phrase" data-text="Auxiliamos na implementação de um parlamento aberto">Auxiliamos na implementação de um parlamento aberto<span class="text__blink-dot">&#9646</span></span></span>
+        </p>
+        <a href="{{ relative page.dest "about.html"}}" class="about__link">Quer saber mais?</a>
     </div>
+  </div>
+
+  <div class="about__video" style="display:none">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tYCfywPzzNA" frameborder="0" allowfullscreen></iframe>
+  </div>
 </section>
 
 <section class="blog">
     <div class="container">
         <header>
-            <a class="more" href="//blog.labhackercd.net/"><i class="fa fa-plus-circle"></i> Ver mais</a>
-            <h1>Últimas Notícias</h1>
+            <h1>LabHacker em ideias:</h1>
         </header>
-        <div class="row">
-            {{#each (first blog 5)}}
-            <div class="{{#if @first}}col-md-8{{else}}col-md-4{{/if}}">
-                <a target="_blank" href="{{link}}">
-                    <div class="blog-post">
-                        <div class="background-image" style="background-image: url('{{this.[rss:image].[#]}}');"></div>
-                        <div class="title">{{title}}</div>
+        <div id="blog-posts" class="row">
+            <!-- Here goes ajax call from header -->
+        </div>
+        <div class="more">
+            <a class="more__link" href="//blog.labhackercd.net/"><span class="more__text">Veja todas as postagens</span><i class="more__icon fa fa-plus"></i></a>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <div class="container">
+
+        <header>
+            <h1>LabHacker em ação:</h1>
+        </header>
+
+        {{#each (first projects 3)}}
+            <div class="row featurette">
+                <div class="col-xs-8 col-xs-push-2 col-md-3 col-md-push-9">
+                    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="{{#if image}}{{{image}}}{{else}}assets/img/logo-labhacker-icon.png{{/if}}">
+                </div>
+
+                <div class="col-xs-12 col-md-8 col-md-pull-3"> 
+                    <h2 class="featurette-heading">{{{title}}}</h2>
+                    <p class="lead">{{{description}}}</p>
+                    <p class="shortcuts l">
+                    {{#if github}}<a target="_blank" href="{{{github}}}"><i class="fa fa-github fa-2x"></i></a> |{{/if}} {{#if href}}<a target="_blank" href="{{{href}}}"><span class="see">Ver projeto</span></a>{{/if}}
+                    </p>
+                    <div class="project__categories">
+                        {{#each categories}} 
+                            <span class="project__category tag--{{hyphenate (lowercase name)}}">{{{name}}}</span> 
+                        {{/each}}
                     </div>
-                </a>
+                </div>   
             </div>
-            {{/each}}
-        </div>
+            <hr class="featurette-divider">
+       {{/each}}
+       <div class="more">
+           <a class="more__link" href="{{ relative page.dest "activities.html"}}"><span class="more__text">Veja todas as nossas atividades</span><i class="more__icon fa fa-plus"></i></a>
+       </div>
     </div>
+
 </section>
-
-
-<section class="project-section" id="wikilegis">
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Wikilegis</h2>
-                <p class="lead">Wikilegis é um projeto que permite os cidadãos sugerir modificações em projetos de lei.</p>
-                <p class="shortcuts l"><a target="_blank" href="https://github.com/labhackercd/wikilegis"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://wikilegis.labhackercd.net/"><span class="see">Ver projeto</span></a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/wikilegis_projeto.png">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
-</section>
-
-<section class="project-section" id="edemocracia">
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/e_democracia_projeto.png">
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">e-Democracia</h2>
-                <p class="lead">O portal e-Democracia da Câmara dos Deputados tem o objetivo de aprimorar o relacionamento entre cidadãos e deputados e ampliar a transparência no processo legislativo. Para tanto, dispõe de diversas ferramentas que favorecem a participação social, como, por exemplo, fóruns, wikilegis, biblioteca virtual e audiência pública interativa.</p>
-                <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/edemocracia"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://edemocracia.camara.gov.br/"><span class="see">Ver projeto</span></a>
-                </p>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
-</section>
-
-<section class="project-section" id="retorica">
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Retórica Parlamentar</h2>
-                <p class="lead">O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele.</p>
-                <p class="shortcuts l"><a target="_blank" href="https://github.com/labhackercd/Retorica/tree/integration"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://retorica.labhackercd.net/"><span class="see">Ver projeto</span></a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/retorica_projeto.png">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
-</section>
-
-<section class="project-section" id="painel">
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/painel_social_projeto.png">
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Painel Social</h2>
-                <p class="lead">O projeto Painel Social consiste em um piloto para a visualização de informações legislativas e de redes sociais. O principal público alvo são os órgãos internos da Câmara dos Deputados, tais como Comissões e Lideranças.</p>
-                <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/painel-social/"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://painelsocial.labhackercd.net/"><span class="see">Ver projeto</span></a>
-                </p>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
-</section>
-
-<section class="project-section" id="hackathons">
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Hackathons</h2>
-                <p class="lead">O Hackathon é uma maratona que reúne hackers, programadores, desenvolvedores e inventores para criar projetos que transformem informações de interesse público em soluções digitais, acessíveis a todos os cidadãos. A Câmara dos Deputados promoveu duas edições. A primeira, realizada em 2013, desenvolveu a temática transparência legislativa e participação popular, e a segunda, em 2014, tratou de gênero e cidadania.</p>
-                <p class="shortcuts l"><a href="/hackathon.html#hackathons"><span><b>Conheça nossos Hackathons</b></span></a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/hackatons_projeto.png">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
-</section>
-
-<!--<section class="project-section" id="mapa">
-  <div class="container">
-<div class="row featurette">  
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/projects/mapa_participativo_projeto.png">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Mapa Participativo</h2>
-          <p class="lead">O projeto Mapa Participativo tem por objetivo desenvolver uma ferramenta que possibilite a navegação visual simplificada por discussões virtuais, facilitando a identificação das principais questões, ideias e argumentos sobre determinado assunto, facilitando a gestão e a sistematização dos conteúdos criados colaborativamente com a finalidade de torná-los mais efetivos.</p>
-          <p class="shortcuts r"><a target="_blank" href="https://github.com/labhackercd/Mapa-Participativo"><i class="fa fa-github fa-2x"></i></a> | <a target="_blank" href="http://mapa.labhackercd.net"><span class="see">Ver projeto</span></a></p>
-        </div>        
-      </div>
-  </div>
-</section>-->
-
-<a href="#">
-    <div class="btt">
-        <div><i class="fa fa-angle-up fa-2x"></i>
-        </div>
-    </div>
-</a>

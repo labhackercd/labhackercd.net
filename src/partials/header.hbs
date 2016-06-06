@@ -36,6 +36,63 @@
 
 <script type="text/javascript" src="{{assets}}/js/jquery.js"></script>
 <script type="text/javascript" src="{{assets}}/js/bootstrap.js"></script>
+<script>
+  $(function () {
+    count = 0;
+    wordsArray = ["Auxiliamos na implementação de um parlamento aberto", "Promovemos ações de transparência legislativa", "Desenvolvemos projetos de participação popular"];
+    blinkDot = $('.text__blink-dot');
+    setInterval(function () {
+      count++;
+      $(".text__phrase").fadeOut(0, function () {
+        $(this).text(wordsArray[count % wordsArray.length]).append(blinkDot).fadeIn(50);
+        $(this).attr('data-text', wordsArray[count % wordsArray.length]);
+      });
+    }, 6000);
+  });
+</script>
+
+<script>
+<script>
+$.ajax({
+  type: "GET",
+  url: "http://blog.labhackercd.net/api/posts/?format=json",
+  contentType: "application/json",
+  crossDomain: true,
+  success: function(json) {
+     var blog_posts_html = "";
+     $.each(json.results, function (key, post) {
+       console.log(post.get_absolute_url);
+       if (key === 0) {
+         var columns = "col-md-8";
+       } else {
+         var columns = "col-md-4";
+       }
+       var colors = ['241, 99, 100', '245, 133, 89', '249, 164, 62', '228, 198, 46', '103, 191, 116', '89, 162, 190', '32, 147, 205', '173, 98, 167'];
+       var random = Math.floor(Math.random() * colors.length);
+       html = `
+         <div class="${columns}">
+           <a target="_blank" href="http://blog.labhackercd.net${post.get_absolute_url}">
+             <div class="blog-post">
+               <div class="background-image" style="background: linear-gradient(rgba(${colors[random]}, 0.8), rgba(0,0,0, 0.9)), url('${post.image}') no-repeat center center / cover;"></div>
+               <div class="title">${post.title}</div>
+             </div>
+           </a>
+         </div>
+       `
+       blog_posts_html += html;
+     })
+
+     $('#blog-posts').html(blog_posts_html);
+     var random = Math.floor(Math.random() * colors.length);      
+      $(this).css('background-color', colors[random]);
+
+  },
+  error: function (xhr, textStatus, errorThrown) {
+      $("#error").html(xhr.responseText);
+  }
+});
+
+</script>
 
 <script>
   var _gaq = _gaq || [];
@@ -66,22 +123,8 @@
     });
     
     $('.blog-post').each(function() {
-      var random = Math.floor(Math.random() * colors.length);      
-      $(this).css('background-color', colors[random]);
     });
     
     var btt_trigger = 680;
-    
-    $(window).scroll(function() {
-
-      if(($(window).scrollTop()  > btt_trigger) && $('.btt').is(":hidden")) {
-        $('.btt').fadeIn();
-      } else if (($(window).scrollTop()  <= btt_trigger) && $('.btt').is(":visible")) {
-        $('.btt').fadeOut();
-      }
-      
-    });
-    
-    
   });
 </script>
