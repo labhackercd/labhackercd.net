@@ -67,6 +67,44 @@
 </script>
 
 <script>
+  $( document ).ready(function() {
+    var is_root = location.pathname == "/" | location.pathname == "/index.html";
+
+    if (is_root) {
+
+      $(window).scroll(function() {
+        var aboutHeight = $('.about').outerHeight();
+        var scroll = $(window).scrollTop();
+
+        if (scroll > 0) {
+          $('.main-nav').addClass('sticked--step-1');
+        } else {
+          $('.main-nav').removeClass('sticked--step-1');
+        }
+
+        if (scroll >= aboutHeight) {
+          $('.main-nav').addClass('sticked');
+
+        } else {
+          $('.main-nav').removeClass('sticked');
+        }
+
+      });
+
+    } else {
+        var navHeight = $('.main-nav').outerHeight();
+        $('body').css("padding-top", navHeight);
+    }
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.main-nav__mobile-icon').click(function(){
+      $(this).toggleClass('active');
+    });
+  });
+</script>
 <script>
 $.ajax({
   type: "GET",

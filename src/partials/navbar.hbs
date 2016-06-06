@@ -1,64 +1,62 @@
-<div class="container">
-  <nav class="navbar nav-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="//labhackercd.net/">
-          <img class="logo" src="{{ assets }}/img/logo.gif" />
-        </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-        <li><a href="//blog.labhackercd.net/">Blog</a></li>        
-        <li{{#is data.section "about"}} class="active"{{/is}}>
-          <a href="{{ relative page.dest "about.html"}}">Sobre</a>
-        </li>        
-        <li{{#is data.section "calendar"}} class="active"{{/is}}>
-          <a href="{{ relative page.dest "calendar.html"}}">Agenda</a>
+<nav id="sticker" class="main-nav {{#is basename "index"}}main-nav--home{{/is}} {{#isnt basename "index"}} sticked {{/isnt}}">
+  <div class="main-nav__container container">
+    <a class="main-nav__link--logo" href="{{ relative page.dest "index.html"}}">
+      <img class="main-nav__logo" src="{{assets}}/img/logo-labhacker.svg" data-fallback="{{assets}}/img/logo-labhacker.png" alt="Logo do Labhacker">
+    </a>
+
+    <div class="main-nav__mobile-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="main-nav__menu">
+      <li class="main-nav__item">
+        <a class="main-nav__link {{#is basename "index"}}active{{/is}}"  href="{{ relative page.dest "index.html"}}">Início</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link {{#is basename "about"}}active{{/is}}" href="{{ relative page.dest "about.html"}}">O que é o LabHacker?</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link {{#is basename "activities"}}active{{/is}}" href="{{ relative page.dest "activities.html"}}">Atividades</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link {{#is basename "hackathon"}}active{{/is}}" href="{{ relative page.dest "hackathon.html"}}">Hackathons</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link {{#is basename "calendar"}}active{{/is}}" href="{{ relative page.dest "calendar.html"}}">Agenda</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="//blog.labhackercd.net/" class="main-nav__link">Blog</a>
+      </li>
+      <li class="main-nav__item main-nav__item--separator"></li>
+      <span class="main-nav__social-menu">
+        <li class="main-nav__item main-nav__item--social">
+          <a  class="main-nav__link main-nav__link--icon main-nav__link--facebook" title="Facebook" href="https://www.facebook.com/LabHackerCD">
+            <i class="main-nav__icon fa fa-facebook"></i>
+          </a> 
         </li>
-        <li class="separator">&nbsp</li>
-        <li>
-          <a title="E-democracia" class="edemocracia icon-img" href="http://edemocracia.camara.gov.br/web/laboratorio-hacker"></a>
-        </li>        
-        <li>
-        <a title="Github" class="github icon" href="https://github.com/labhackercd/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+        <li class="main-nav__item main-nav__item--social">
+          <a  class="main-nav__link main-nav__link--icon main-nav__link--twitter" title="Twitter" href="https://twitter.com/labhackercd">
+            <i class="main-nav__icon fa fa-twitter"></i>
+          </a> 
         </li>
-        <li>
-        <a title="Twitter" class="twitter icon" href="https://twitter.com/labhackercd">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+        <li class="main-nav__item main-nav__item--social">
+          <a  class="main-nav__link main-nav__link--icon main-nav__link--youtube" title="YouTube" href="https://www.youtube.com/channel/UC8Fnw6XN_gBDqAHSR4rp0NQ">
+            <i class="main-nav__icon fa fa-youtube-play"></i>
+          </a> 
         </li>
-        <li>
-        <a title="Facebook" class="facebook icon" href="https://www.facebook.com/LabHackerCD">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+        <li class="main-nav__item main-nav__item--social">
+          <a  class="main-nav__link main-nav__link--icon main-nav__link--flickr" title="Flickr" href="https://www.flickr.com/photos/labhackercd/albums">
+            <i class="main-nav__icon fa fa-flickr"></i>
+          </a> 
         </li>
-        <li>
-        <a title="Flickr" class="flickr icon" href="https://www.flickr.com/photos/labhackercd/albums">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+        <li class="main-nav__item main-nav__item--social">
+          <a  class="main-nav__link main-nav__link--icon main-nav__link--github" title="Github" href="https://github.com/labhackercd">
+            <i class="main-nav__icon fa fa-github"></i>
+          </a> 
         </li>
-      </ul>
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </nav>
-</div>
+      </span>
+    </ul>
+  </div>
+</nav>
