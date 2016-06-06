@@ -2,3 +2,7 @@ production: <%= production %>
 
 ga:
   id: UA-57160178-1
+
+description: "O LabHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo"
+
+author: "Feito pelo Laboratório Hacker da Câmara dos Deputados, co-autorado por Dirley Rodrigues, Fellype Nascimento, Caio Viotti, João Dreyer"
