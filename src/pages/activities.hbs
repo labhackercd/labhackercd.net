@@ -1,0 +1,49 @@
+--- title: Atividades ---
+<section class="activities-about" id="activities">
+
+    <header class="masthead -activities" style="margin-bottom: 0;">
+      <div class="container masthead-content">
+          <div class="masthead-icon">
+              <img class="img" src="{{assets}}/img/headers/activities-icon.png" alt="sobre">
+          </div>
+          <h1 class="masthead-title -activities">Nossas atividades</h1>
+      </div>    
+    </header>
+
+    <div class="activities__filter-bar">
+        <div class="container">
+            <h1 class="filter-bar__header">Filtro:</h1>
+            {{#each categories}}<div class="activities__filter filter tag--{{hyphenate (lowercase name)}}" data-filter=".{{hyphenate (lowercase name)}}"><i class="filter__icon fa fa-plus"></i>{{{name}}}</div>{{/each}}
+        </div> 
+    </div>
+    <div class="container">
+        <ul class="activities__list row" id="Container">
+            <div class="activities__error">
+                <span>Não foram encontrados resultados para os filtros selecionados :(</span>
+            </div>
+            {{#each projects}}
+                <li class="activities__item mix {{#each categories}} {{hyphenate (lowercase name)}} {{/each}}">
+                    <div class="activities__title">
+                        <img class="activities__image" src="{{#if image}}{{{image}}}{{else}}assets/img/logo-labhacker-icon.png{{/if}}">
+                        <h2 class="activities__heading">{{{title}}}</h2>
+                    </div>
+                    <div class="activities__info"> 
+                        <p class="activities__description lead">{{{description}}}</p>
+                        
+                        <div class="activities__sup-info">
+                            <div class="activities__links">
+                                {{#if github}}<a class="activities__link activities__link--github" target="_blank" href="{{{github}}}"><i class="fa fa-github"></i></a> | {{/if}}{{#if href}}<a target="_blank" href="{{{href}}}"><span class="see">{{{href-display}}}</span></a>{{/if}}
+                            </div>
+                            <div class="project__categories project__categories--activities">
+                                {{#each categories}} 
+                                    <span class="project__category project__category--activities tag--{{hyphenate (lowercase name)}}">{{{name}}}</span> 
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+</section>

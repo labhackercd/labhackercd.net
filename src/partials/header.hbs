@@ -47,6 +47,7 @@
 <!-- App name -->
 <meta name="apple-mobile-web-app-title" content="LabHackerCD">
 <meta name="application-name" content="LabHackerCD">
+
 <!--[if lt IE 9]><script src="{{ assets }}/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,6 +59,8 @@
 
 <script type="text/javascript" src="{{assets}}/js/jquery.js"></script>
 <script type="text/javascript" src="{{assets}}/js/bootstrap.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
 <script>
   $(function () {
     count = 0;
@@ -129,6 +132,31 @@
   }
 
 </script>
+
+<script>
+    $(function(){
+
+    // Instantiate MixItUp:
+
+    $('#Container').mixItUp({
+      load: {
+        filter: '.activities__item'
+      },
+      controls: {
+        toggleFilterButtons: true,
+        toggleLogic: 'and'
+      },
+      animation: {
+        animateResizeTargets: true,
+        duration: 390,
+        effects: 'fade stagger(50ms)',
+        easing: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)'
+      }
+    });
+  });
+
+</script>
+
 <script>
   $(document).ready(function(){
     $('.main-nav__mobile-icon').click(function(){
@@ -136,6 +164,7 @@
     });
   });
 </script>
+
 <script>
 $.ajax({
   type: "GET",
