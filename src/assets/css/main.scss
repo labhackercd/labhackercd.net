@@ -134,10 +134,10 @@
 }
 
 $light-gray: #8E8E8E;
-$dark-blue: #2F3F4E;
+$dark-blue: #051126;
 $yellow: #BCE328;
 body {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
 }
 
 html,
@@ -1023,4 +1023,11 @@ $color_tapa_approx: #777;
         opacity: .7;
         font-size: 1.1em;
     }
+
+.font-size-large {
+    font-size: 1.8rem;
+}
+
+.font-size-larger {
+    font-size: 2rem;
 }
