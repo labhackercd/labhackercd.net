@@ -193,27 +193,74 @@ header {
     }
 }
 
-footer {
+.footer {
     background-color: $dark-blue;
-    padding-top: 20px;
-    padding-bottom: 40px;
     color: white;
     margin-bottom: -15px;
-    a {
-        color: white;
-        opacity: 0.6;
+    text-align: center;
+    padding: 4rem 1rem;
+
+    &__owner-info {
+
+      .owner-info__item {
+        display: inline-block;
+        margin: 0 4rem;
+        margin-bottom: 1rem;
+        vertical-align: middle;
+
+        @media (max-width: 769px) { 
+          margin-bottom: 3.5rem;
+        }
+      }
+
+      .owner-info__logo {
+        height: 4rem;
+      }
+
+      .onwer-info__text--phone {
+        color: #cfe41b;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
         &:hover {
-            opacity: 1;
-            color: white;
             text-decoration: none;
         }
-    }
-    .text {
-        text-align: justify;
-        opacity: 0.6;
-    }
-}
+      }
 
+      .onwer-info__text--email {
+        font-size: 1.7rem;
+        margin-bottom: -0.3rem;
+      }
+
+    }
+
+    &__address {
+      font-size: 2.4rem;
+      letter-spacing: 0.15rem;
+      font-weight: 400;
+    }
+
+    &__copyright {
+      margin-top: 3.5rem;
+      font-weight: 100;
+      letter-spacing: 0.05rem;
+      font-size: 1.7rem;
+
+      .copyright__logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1.5rem;
+        height: 3rem;
+      }
+
+      .copyright__link {
+        color: white;
+        font-weight: 400;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+      }
     }
 }
 

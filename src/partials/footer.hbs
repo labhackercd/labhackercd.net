@@ -1,25 +1,33 @@
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Sobre</h2>
-        <p class="text">O Laboratório Hacker da Câmara dos Deputados, criado pela Resolução 49 de 2013, conta com espaço físico de acesso e uso livres para qualquer cidadão, especialmente programadores e desenvolvedores de softwares, que poderão utilizar dados públicos para ações de cidadania.
+<footer class="footer">
+  <div class="footer__owner-info">
 
-Nosso objetivo, portanto, é promover ações colaborativas visando o aprimoramento da transparência legislativa e da participação popular. <a href="/about.html">Conheça nossa equipe.</a>
-<br/>
-Visite-nos no Anexo IV da Câmara dos Deputados, Subsolo, Sala 90</p>
-      <p class="text">Todo o conteúdo deste site está publicado sob a licença Creative Commons
-CC BY-SA 4.0 Brasil</p>
-      </div>
+    <div class="owner-info__item">
+      <a href="http://www.camara.leg.br">
+        <img class="owner-info__logo" src="{{assets}}/img/logo-camara.svg" data-fallback="{{assets}}/img/logo-camara.png" alt="Logo da Câmara dos Deputados">
+      </a>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div style="float:right">
-          <a href="http://blog.labhackercd.net/wp-admin/">
-            <i class="fa fa-user"></i> Admin
-          </a>
-        </div>
-      </div>
+
+    <div class="owner-info__item">
+      <a href="{{ relative page.dest "index.html"}}">
+        <img class="owner-info__logo" src="{{assets}}/img/logo-labhacker.svg" data-fallback="{{assets}}/img/logo-labhacker.png" alt="Logo do Labhacker">
+      </a>
     </div>
+
+    <div class="owner-info__item">
+      <div class="onwer-info__text onwer-info__text--email">labhacker@camara.leg.br</div>
+      <a class="onwer-info__text onwer-info__text--phone" href="tel:+556132166003">+55 (61) 3216-6003</a>
+    </div>
+   
+  </div>
+  <div class="footer__address">
+    <p>Visite-nos no Anexo IV da Câmara dos Deputados, Subsolo, Sala 90</p>
+  </div>
+
+  <div class="footer__copyright">
+    <p>Todo o conteúdo deste site está publicado sob a licença <a class="copyright__link" href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons CC BY-SA 4.0</a> Brasil 
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">
+        <img class="copyright__logo" src="{{assets}}/img/logo-ccbysa.svg" data-fallback="{{assets}}/img/logo-ccbysa.png" alt="Logo do Creative Commons BY SA">
+      </a>
+    </p>
   </div>
 </footer>
