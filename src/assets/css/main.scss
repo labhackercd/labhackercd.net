@@ -1615,7 +1615,7 @@ $color_tapa_approx: #777;
 
 @media(min-width: 992px) {
     .featurette-heading {
-        margin-top: 120px;
+        //margin-top: 120px;
     }
 }
 
@@ -1699,7 +1699,7 @@ $color_tapa_approx: #777;
     }
     .card {
         margin-bottom: 20px;
-        min-height: 90px;
+        min-height: 110px;
     }
     .avatar {
         width: 80px;
@@ -1717,6 +1717,7 @@ $color_tapa_approx: #777;
         opacity: .7;
         font-size: 1.1em;
     }
+}
 
 .font-size-large {
     font-size: 1.8rem;
