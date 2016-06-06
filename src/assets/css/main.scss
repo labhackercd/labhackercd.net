@@ -1603,19 +1603,6 @@ $color_tapa_approx: #777;
 }
 
 @media(min-width: 768px) {
-    .navbar-wrapper {
-        margin-top: 20px;
-        .container {
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-        .navbar {
-            padding-right: 0;
-            padding-left: 0;
-            //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
-            border-radius: 4px;
-        }
-    }
     .featurette-heading {
         font-size: 50px;
     }
