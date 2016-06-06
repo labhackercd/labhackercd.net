@@ -44,6 +44,9 @@
 @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
 @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
 @mixin textGlitch($name, $intensity, $textColor, $background, $duration1, $pause1, $duration2, $pause2, $highlightColor1, $highlightColor2, $width, $height) {
   
   color: $textColor;
@@ -862,6 +865,46 @@ header {
         } 
     }
 }
+section .more {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.more__text {
+  display: block;
+  color: #3C4C77;
+  font-size: 2.5rem;
+}
+
+.more__link {
+  display: inline-block;
+
+  &:hover {
+
+    text-decoration: none;
+
+    & .more__icon {
+        transform: scale(1.2) rotate(360deg);
+    }
+
+    & .more__text {
+        color: #4D6FCC;
+    }
+  }
+
+}
+
+.more__icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #192032;
+  line-height: 2.7rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  color: #CFE41B;
+  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
 .masthead {
     height: 300px;
     background-color: red;
