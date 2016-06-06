@@ -15,10 +15,6 @@
   photo: "<%= assets %>/img/team/pedro.png"
   description: "Gestor de tecnologia"
 - 
-  name: "Thiago Lopes Carneiro"
-  photo: "<%= assets %>/img/team/thiago.png"
-  description: "Gestor de projetos de participação digital"
-- 
   name: "Simone Ravazzolli"
   photo: "<%= assets %>/img/team/simone.png"
   description: "Gestora de comunicação e planejamento - FC-01"
@@ -39,13 +35,13 @@
   photo: "<%= assets %>/img/team/diegudo.png"
   description: "Assessor para o Portal e-Democracia, Redator, Tradutor"
 - 
-  name: "Dirley Rodrigues Lima da Silva"
-  photo: "<%= assets %>/img/team/dirley.png"
+  name: "Matheus Fernandes"
+  photo: "<%= assets %>/img/team/matheus.png"
   description: "Desenvolvedor e administrador de sistemas"
 - 
   name: "Erivânio Rodolfo Vasconcelos de Souza"
   photo: "<%= assets %>/img/team/ericonan.png"
-  description: "Desenvolvedor"
+  description: "Desenvolvedor e administrador de sistemas"
 - 
   name: "Caio Viotti"
   photo: "<%= assets %>/img/team/caio.png"
