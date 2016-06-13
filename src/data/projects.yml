@@ -46,9 +46,9 @@
     - name: "Descontinuado"
 -
   title: "Mapa Participativo"
-  github: "https://github.com/labhackercd/Mapa-Participativo"
+  github: "https://github.com/labhackercd/teste_participativo"
   image: "<%= assets %>/img/projects/mapa_participativo_projeto.png"
-  description: "O projeto Mapa Participativo tem por objetivo desenvolver uma ferramenta que possibilite a navegação visual simplificada por discussões virtuais, facilitando a identificação das principais questões, ideias e argumentos sobre determinado assunto, facilitando a gestão e a sistematização dos conteúdos criados colaborativamente com a finalidade de torná-los mais efetivos."
+  description: "O projeto Mapa Participativo tem por objetivo desenvolver uma ferramenta que possibilite uma navegação visual mais simplificada em discussões virtuais. A proposta é facilitar a identificação das principais questões, ideias e argumentos sobre determinado assunto, permitindo a gestão e a sistematização dos conteúdos criados colaborativamente, com a finalidade de torná-los mais efetivos."
   categories: 
     - name: "Projeto"
     - name: "Descontinuado"
@@ -82,32 +82,36 @@
     - name: "Evento"
 - 
   title: "Estágio-Visita"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-visita-curta-duracao/conheca"
+  href-display: "Saiba mais"
   description: "O LabHacker é parceiro no programa Estágio-Visita da Câmara e recebe mensalmente em seu espaço os universitários que vêm de todo o país para conhecer as atividades legislativas, incentivando a participação democrática e o exercício da cidadania. Durante cinco dias, os estudantes participam de debates, visitas, palestras, vivências e simulações que possibilitam o desenvolvimento de conhecimentos sobre democracia e papel do Legislativo. Os interessados devem entrar em contato com os parlamentares que representam seu estado e pedir a indicação."
   categories: 
     - name: "Programa"
+    - name: "Parceria"
 - 
   title: "Estágio-Cidadão"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-cidadao/conheca-mais"
+  href-display: "Saiba Mais"
   description: "O LabHacker é parceiro no programa Estágio-Visita da Câmara, dedicado aos universitários que fazem estágio na Casa. O objetivo desse programa é esclarecer, por meio de aulas, vivências, palestras e simulações, as funções do Parlamento e a importância do exercício da cidadania. Edições: a primeira será de 13 a 17 de junho; e a segunda, de 03 a 07 de outubro."
   categories: 
     - name: "Programa"
+    - name: "Parceria"
 - 
   title: "Escola na Câmara"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/escola-na-camara/cartilha-escola%20na%20camara.pdf"
+  href-display: "Leia a Cartilha"
   description: "O LabHacker também é parceiro no programa Escola na Câmara, que recebe mensalmente alunos do ensino médio das escolas públicas do Distrito Federal para uma visita guiada à Casa, integrada a atividades pedagógicas com especialistas. O objetivo do programa é capacitar esses estudantes para a consciência crítica e para a participação no processo político-democrático. As escolas interessadas devem entrar em contato pelo e-mail: escolanacamara.cefor@camara.leg.br ou pelos telefones 3216.7618/19."
   categories: 
     - name: "Programa"
+    - name: "Parceria"
 - 
   title: "Estágio-Participação"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-participacao/inscricoes"
+  href-display: "Saiba Mais"
   description: "O LabHacker é um dos responsáveis pelo programa Estágio Participação da Câmara, que recebe mensalmente estudantes universitários para estimular a participação democrática e cidadã por meio de atividades que ampliem o conhecimento sobre o Poder Legislativo. A dinâmica está baseada no cumprimento de tarefas ou missões sobre um tema específico, que serão propostas aos estudantes durante os três dias de vivência na Casa. Os interessados devem responder corretamente as questões de um quiz, que é disponibilizado no Portal da Câmara. Os 50 estudantes mais bem classificados são convidados a fazer a inscrição. www.camara.leg.br/estagioparticipacao"
   categories: 
     - name: "Programa"
+    - name: "Parceria"
 - 
   title: "CLP Digital"
   #href: "#"
