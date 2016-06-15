@@ -25,7 +25,7 @@
   categories: 
    - name: "Evento"
    - name: "Parceria"
--  
+-
   title: "Retórica Parlamentar"
   href: "http://retorica.labhackercd.net"
   href-display: "Ver Projeto"
@@ -34,6 +34,16 @@
   description: "O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele."
   categories: 
     - name: "Projeto"
+-
+  title: "Novo E-Democracia"
+# href: "http://retorica.labhackercd.net"
+# href-display: "Ver Projeto"
+  github: "https://github.com/labhackercd/edemocracia-colab"
+  image: "<%= assets %>/img/projects/novoedem_projeto.png"
+  description: "Um novo portal e-Democracia está em desenvolvimento, com foco na experiência do usuário. Quando lançado, facilitará a participação por meio da recomendação de temas segundo o interesse dos cidadãos, além de possibilitar a integração das várias ferramentas do portal com mecanismos de outras plataformas."
+  categories: 
+    - name: "Projeto"
+    - name: "Em desenvolvimento"
 -
   title: "Painel Social"
   href: "http://painelsocial.labhackercd.net/"
@@ -54,36 +64,36 @@
     - name: "Descontinuado"
 - 
   title: "Pequenos Hackers – Scratch"
-  #href: "#"
-  href-display: "Ver Evento"
+  href: "http://blog.labhackercd.net/2016/4/27/pequenos-hackers-invadem-labhacker-nesta-sexta-feira/"
+  href-display: "Leia o post"
   description: "Oficina para jovens com idade entre 10 e 12 anos trabalharem, de maneira integrada, noções de programação de jogos e conceitos básicos de Democracia. Evento no dia 29 de abril. Inscrições até 24 de abril, por meio de vídeo respondendo à pergunta: “O que democracia tem a ver com tecnologia”. Os dez vídeos mais votados na Fanpage do LabHacker garantirão as vagas."
   categories: 
     - name: "Evento"
 - 
   title: "Pequenos Hackers – Ideação de jogo online"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://blog.labhackercd.net/2016/3/21/criancas-idealizam-jogo-online-sobre-representatividade/"
+  href-display: "Leia o post"
   description: "Oficina para crianças e jovens com idade entre 10 e 14 anos, que dá continuidade à série de atividades “Pequenos Hackers”, desta vez com parceria do portal Plenarinho da Câmara. Tem como objetivo inserir os participantes no debate e criação de ideias para a elaboração de um jogo online de representatividade, focado no público infanto-juvenil. Evento nos dias 18 e 23 de março. Inscrições abertas no dia 11 de março. Os primeiros 10 e-mails que chegarem para o endereço labhacker@camara.leg.br a partir das 15 horas garantem as vagas."
   categories: 
     - name: "Evento"
 - 
   title: "Parada Hacker – BlockChain"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://blog.labhackercd.net/2016/5/16/nossa-discussao-sobre-o-blockchain-foi-uma-parada-muito-legal/"
+  href-display: "Leia o post"
   description: "Debate sobre o BlockChain, tecnologia para a segurança de informações digitais. Os especialistas Walker de Alencar, João Barguil e Jean Lucas Lima vão discutir os possíveis benefícios do uso dessa tecnologia para a proteção dos dados da Câmara, com a participação de servidores da Casa. Evento no dia 12 de maio, das 15h às 17h. Os interessados podem acompanhar pelo canal do LabHacker no YouTube e enviar dúvidas e comentários para os especialistas."
   categories: 
     - name: "Evento"
 - 
   title: "Nós do Lab: Todos juntos amarrando as ações do LabHacker"
-  #href: "#"
-  href-display: "Ver Projeto"
+  href: "http://blog.labhackercd.net/2016/4/18/nos-do-lab-colaboracao-e-inovacao-em-debate/"
+  href-display: "Leia o post"
   description: "Debate com pesquisadores, parlamentares, professores, ativistas cívicos e especialistas em tecnologia de todo o País sobre participação social e premissas colaborativas para o Legislativo. Durante todo o dia, os convidados vão compartilhar informações e experiências para aprimorar o trabalho do LabHacker e sugerir ações para tornar o Parlamento mais aberto. Evento no dia 30 de março, a partir das 9 horas, no espaço LabHacker. Os interessados podem acompanhar pelo canal do LabHacker no YouTube e enviar dúvidas e comentários para os participantes."
   categories: 
     - name: "Evento"
 - 
   title: "Estágio-Visita"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-visita-curta-duracao/conheca"
-  href-display: "Saiba mais"
+  href-display: "Saiba Mais"
   description: "O LabHacker é parceiro no programa Estágio-Visita da Câmara e recebe mensalmente em seu espaço os universitários que vêm de todo o país para conhecer as atividades legislativas, incentivando a participação democrática e o exercício da cidadania. Durante cinco dias, os estudantes participam de debates, visitas, palestras, vivências e simulações que possibilitam o desenvolvimento de conhecimentos sobre democracia e papel do Legislativo. Os interessados devem entrar em contato com os parlamentares que representam seu estado e pedir a indicação."
   categories: 
     - name: "Programa"
@@ -92,7 +102,7 @@
   title: "Estágio-Cidadão"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-cidadao/conheca-mais"
   href-display: "Saiba Mais"
-  description: "O LabHacker é parceiro no programa Estágio-Visita da Câmara, dedicado aos universitários que fazem estágio na Casa. O objetivo desse programa é esclarecer, por meio de aulas, vivências, palestras e simulações, as funções do Parlamento e a importância do exercício da cidadania. Edições: a primeira será de 13 a 17 de junho; e a segunda, de 03 a 07 de outubro."
+  description: "O LabHacker é parceiro no programa Estágio-Cidadão da Câmara, dedicado aos universitários que fazem estágio na Casa. O objetivo desse programa é esclarecer, por meio de aulas, vivências, palestras e simulações, as funções do Parlamento e a importância do exercício da cidadania. Edições: a primeira será de 13 a 17 de junho; e a segunda, de 03 a 07 de outubro."
   categories: 
     - name: "Programa"
     - name: "Parceria"
@@ -105,10 +115,10 @@
     - name: "Programa"
     - name: "Parceria"
 - 
-  title: "Estágio-Participação"
+  title: "Estágio Participação"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-participacao/inscricoes"
   href-display: "Saiba Mais"
-  description: "O LabHacker é um dos responsáveis pelo programa Estágio Participação da Câmara, que recebe mensalmente estudantes universitários para estimular a participação democrática e cidadã por meio de atividades que ampliem o conhecimento sobre o Poder Legislativo. A dinâmica está baseada no cumprimento de tarefas ou missões sobre um tema específico, que serão propostas aos estudantes durante os três dias de vivência na Casa. Os interessados devem responder corretamente as questões de um quiz, que é disponibilizado no Portal da Câmara. Os 50 estudantes mais bem classificados são convidados a fazer a inscrição. www.camara.leg.br/estagioparticipacao"
+  description: "O LabHacker é um dos responsáveis pelo programa Estágio Participação da Câmara, que recebe mensalmente estudantes universitários para estimular a participação democrática e cidadã por meio de atividades que ampliem o conhecimento sobre o Poder Legislativo. A dinâmica está baseada no cumprimento de tarefas ou missões sobre um tema específico, que serão propostas aos estudantes durante os três dias de vivência na Casa. Os interessados devem responder corretamente as questões de um quiz, que é disponibilizado no Portal da Câmara. Os 50 estudantes mais bem classificados são convidados a fazer a inscrição."
   categories: 
     - name: "Programa"
     - name: "Parceria"
