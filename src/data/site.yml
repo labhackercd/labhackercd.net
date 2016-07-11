@@ -1,7 +1,7 @@
 production: <%= production %>
 
 ga:
-  id: UA-57160178-1
+  id: UA-70690943-4
 
 description: "O LabHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo"
 
