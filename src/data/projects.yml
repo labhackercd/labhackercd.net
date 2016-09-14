@@ -1,3 +1,13 @@
+-
+  title: "Novo E-Democracia"
+  href: "beta.edemocracia.camara.leg.br"
+  href-display: "Ver Projeto"
+  github: "https://github.com/labhackercd/edemocracia-colab"
+  image: "<%= assets %>/img/projects/novoedem_projeto.png"
+  description: "Um novo portal e-Democracia com foco na experiência do usuário está em desenvolvimento e já disponível em versão beta. Ele facilita a participação por meio da recomendação de temas segundo o interesse dos cidadãos, além de possibilitar a integração das várias ferramentas do portal com mecanismos de outras plataformas."
+  categories: 
+    - name: "Projeto"
+    - name: "Em desenvolvimento"
 - 
   title: "Wikilegis"
   href: "http://wikilegis.labhackercd.net"
@@ -9,6 +19,14 @@
     - name: "Projeto"
     - name: "Em desenvolvimento"
 - 
+  title: "1º Hackathon Legislativo Mundial"
+  href: "http://www.wepc2016.org/en/hackathon-wepc2016"
+  href-display: "Ir para o site"
+  description: "Maratona que vai reunir hackers cívicos, programadores e desenvolvedores de softwares para a criação de sites e aplicativos, relacionados a temas legislativos, que aumentem a transparência das informações dos Parlamentos e a participação social. O Laboratório Hacker da Câmara promove o 1º Hackathon Legislativo Mundial em parceria com a Câmara de Deputados do Chile, a União Interparlamentar e o Instituto Nacional Democrata. O evento será realizado de 28 a 30 de junho em Valparaíso, no Chile. Inscrições abertas até 26 de junho para participações presenciais ou remotas."
+  categories: 
+   - name: "Evento"
+   - name: "Parceria"
+-
   title: "E-Democracia"
   href: "http://edemocracia.camara.gov.br"
   href-display: "Ver Projeto"
@@ -18,14 +36,6 @@
   categories: 
     - name: "Projeto"
 -
-  title: "1º Hackathon Legislativo Mundial"
-  href: "http://www.wepc2016.org/en/hackathon-wepc2016"
-  href-display: "Ir para o site"
-  description: "Maratona que vai reunir hackers cívicos, programadores e desenvolvedores de softwares para a criação de sites e aplicativos, relacionados a temas legislativos, que aumentem a transparência das informações dos Parlamentos e a participação social. O Laboratório Hacker da Câmara promove o 1º Hackathon Legislativo Mundial em parceria com a Câmara de Deputados do Chile, a União Interparlamentar e o Instituto Nacional Democrata. O evento será realizado de 28 a 30 de junho em Valparaíso, no Chile. Inscrições abertas até 26 de junho para participações presenciais ou remotas."
-  categories: 
-   - name: "Evento"
-   - name: "Parceria"
--
   title: "Retórica Parlamentar"
   href: "http://retorica.labhackercd.net"
   href-display: "Ver Projeto"
@@ -34,16 +44,6 @@
   description: "O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele."
   categories: 
     - name: "Projeto"
--
-  title: "Novo E-Democracia"
-# href: "http://retorica.labhackercd.net"
-# href-display: "Ver Projeto"
-  github: "https://github.com/labhackercd/edemocracia-colab"
-  image: "<%= assets %>/img/projects/novoedem_projeto.png"
-  description: "Um novo portal e-Democracia está em desenvolvimento, com foco na experiência do usuário. Quando lançado, facilitará a participação por meio da recomendação de temas segundo o interesse dos cidadãos, além de possibilitar a integração das várias ferramentas do portal com mecanismos de outras plataformas."
-  categories: 
-    - name: "Projeto"
-    - name: "Em desenvolvimento"
 -
   title: "Painel Social"
   href: "http://painelsocial.labhackercd.net/"

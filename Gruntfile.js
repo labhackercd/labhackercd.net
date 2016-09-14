@@ -79,7 +79,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          port: 8000,
+          port: 8003,
           useAvaiablePort: true,
           //livereload: true,
           hostname: '*',
