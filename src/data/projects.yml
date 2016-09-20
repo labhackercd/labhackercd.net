@@ -1,6 +1,6 @@
 -
   title: "Novo E-Democracia"
-  href: "beta.edemocracia.camara.leg.br"
+  href: "http://beta.edemocracia.camara.leg.br"
   href-display: "Ver Projeto"
   github: "https://github.com/labhackercd/edemocracia-colab"
   image: "<%= assets %>/img/projects/novoedem_projeto.png"
