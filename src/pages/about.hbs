@@ -68,26 +68,25 @@
             </div>
         </div>
 
-        <div class="container what-is__team-wrapper">
-            <div class="labhacker-team col-sm-12">
-                <h2>Nossa Equipe</h2>
-                <div class="row">
-                    {{#each contributors }}
-                        <div class="col-xs-12 col-sm-6 col-lg-4 card">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="avatar" style="background: url({{ photo }}) no-repeat;"></div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="name">{{ name }}</h4>
-                                    <span class="function">{{ description }}</span>
-                                </div>
-                            </div>
+        <div class="container labhacker-team">
+            {{#each contributors }}
+                <div class="member-card">
+                    <div class="member-card__infos">
+                        <div class="member-card__picture-wrapper">
+                            <img src="{{ photo }}" class="member-card__picture">
                         </div>
-                    {{/each}}
+                        <span class="member-card__name">{{ name }}</span>
+                        <span class="member-card__function">{{ description }}</span>
+                    </div>
+                    <p class="member-card__bio">
+                    <i class="member-card__icon fa fa-{{ icon }}"></i>
+                        {{ name }}
+                        {{ bio }}
+                    </p>
                 </div>
-            </div>
+            {{/each}}
         </div>
+
     </div>
 
 </section>
