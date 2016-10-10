@@ -1702,7 +1702,7 @@ $color_tapa_approx: #777;
       padding-bottom: 0;
       margin: 8rem 1rem 1rem;
       border-radius: 1rem;
-      background-color: #0c1a32;
+      background-color: #0e2339;
       margin-bottom: 0rem;
       border: 1rem solid #051126;
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.36),0 2px 10px 0 rgba(0,0,0,0.52);
@@ -1725,13 +1725,17 @@ $color_tapa_approx: #777;
 
     .member-card__picture-wrapper {
       border-radius: 50%;
-      border: 0.9rem solid #0c1a32;
+      border: 0.9rem solid #0e2339;
       box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2),0 2px 25px 0 rgba(0,0,0,0.3);
       margin-bottom: 0.5rem;
+      height: 10.5rem;
+      width: 10.5rem;
+      box-sizing: content-box;
     }
 
     .member-card__picture {
       width: 10.5rem;
+      height: 10.5rem;
       padding: 0.5rem;
       border-radius: 50%;
       box-shadow: inset 0px 0px 0px 1rem #cfe41b;
