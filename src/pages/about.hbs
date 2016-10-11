@@ -72,21 +72,26 @@
             {{#each contributors }}
                 <div class="member-card member-card--{{ slug }}">
                     <div class="member-card__infos">
-                        <div class="member-card__picture-wrapper">
-                            <img src="{{ photo }}" class="member-card__picture">
+                        <div class="member-card__picture-container">
+                            <div class="member-card__picture-wrapper">
+                                <img src="{{ photo }}" class="member-card__picture">
+                                {{#if rofl }}
+                                    <img src="assets/img/team/{{ slug }}.gif" class="member-card__picture member-card__picture--egg">
+                                {{/if}}
+                            </div>
                         </div>
                         <span class="member-card__name">{{ name }}</span>
                         <span class="member-card__function">{{ description }}</span>
                     </div>
                     <p class="member-card__bio">
-                    <i class="member-card__icon icon icon-{{ icon }}"></i>
+                    <span class="member-card__icon-wrapper">
+                        <i class="member-card__icon icon icon-{{ icon }} {{#if rofl }}lol{{/if}}"></i>
+                    </span>
                         {{ name }}
                         {{ bio }}
                     </p>
                 </div>
             {{/each}}
         </div>
-
     </div>
-
 </section>

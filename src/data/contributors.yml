@@ -57,6 +57,7 @@
 - 
   name: "Diego Cavalcanti Cunha"
   slug: "diegudo"
+  rofl: true
   photo: "<%= assets %>/img/team/diegudo.png"
   description: "Assessor para o Portal e-Democracia, Redator, Tradutor"
   icon: "carrot"
@@ -71,6 +72,7 @@
 - 
   name: "Erivânio Vasconcelos"
   slug: "ericonan"
+  rofl: true
   photo: "<%= assets %>/img/team/ericonan.png"
   description: "Desenvolvedor e administrador de sistemas"
   icon: "bomb"

@@ -227,6 +227,30 @@ $.ajax({
 
 <script>
   $( document ).ready(function() {
+    $('.member-card__icon.lol').click(function() {
+      $(this).closest('.member-card').find('.member-card__picture-container').toggleClass('lol');
+    });
+
+    $('.member-card--ericonan .member-card__icon').one( "click", function() {
+      $('.member-card--ericonan').prepend('<audio class="ericonanmp3" src="assets/files/ericonan.mp3" preload="auto"></audio>');
+    });
+
+    $('.member-card--ericonan .member-card__picture-container').click(function() {
+      if($(this).hasClass('lol')) {
+        $('body').append('<div class="rofl"><div class="the-ericonan-wrapper"><img class="the-ericonan-logo" src="assets/img/ericonan-logo.png"><img class="the-ericonan" src="assets/img/ericonan.jpg"></div><div class="lightning"></div></div>');
+
+        $('.ericonanmp3')[0].play();
+        
+        setTimeout(function() {
+          $('.rofl').remove();
+        }, 14000);
+      }
+    });
+  });
+</script>
+
+<script>
+  $( document ).ready(function() {
     var colors = ['#f16364', '#f58559', '#f9a43e', '#e4c62e', '#67bf74', '#59a2be', '#2093cd', '#ad62a7'];
         
     $('.slot').each(function() {
@@ -242,4 +266,3 @@ $.ajax({
     var btt_trigger = 680;
   });
 </script>
-
