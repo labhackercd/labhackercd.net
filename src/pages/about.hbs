@@ -70,7 +70,7 @@
 
         <div class="container labhacker-team">
             {{#each contributors }}
-                <div class="member-card">
+                <div class="member-card member-card--{{ slug }}">
                     <div class="member-card__infos">
                         <div class="member-card__picture-wrapper">
                             <img src="{{ photo }}" class="member-card__picture">
@@ -79,7 +79,7 @@
                         <span class="member-card__function">{{ description }}</span>
                     </div>
                     <p class="member-card__bio">
-                    <i class="member-card__icon fa fa-{{ icon }}"></i>
+                    <i class="member-card__icon icon icon-{{ icon }}"></i>
                         {{ name }}
                         {{ bio }}
                     </p>

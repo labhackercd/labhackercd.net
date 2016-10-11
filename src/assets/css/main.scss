@@ -1713,6 +1713,12 @@ $color_tapa_approx: #777;
       @media(max-width: 768px) {
         flex: 1 1 34rem;
       }
+
+      &--walter {
+        .member-card__icon {
+          color: #f44336;
+        }
+      }
     }
 
     .member-card__infos {

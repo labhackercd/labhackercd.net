@@ -74,6 +74,24 @@ module.exports = function(grunt) {
           src: '**.*',
           dest: './build/assets/fonts/'
         }]
+      },
+      'fontastic-labhacker': {
+        files: [{
+          expand: true,
+          cwd: './bower_components/fontastic-labhacker/fonts/',
+          src: '**.*',
+          dest: './build/assets/fonts/'
+        }]
+      },
+    },
+    replace: {
+      fontastic_copy_and_replace_urls: {
+        src: ['./bower_components/fontastic-labhacker/styles.css'],
+        dest: './build/assets/css/fontastic-labhacker.css',
+        replacements: [{
+          from: 'url("fonts',
+          to: 'url("../fonts'
+        }]
       }
     },
     connect: {
@@ -123,11 +141,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   grunt.registerTask('build', [
     'assemble',
     'sass',
     'copy',
+    'replace',
   ]);
 
   grunt.registerTask('serve', [
