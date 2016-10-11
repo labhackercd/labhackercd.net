@@ -61,6 +61,7 @@
   photo: "<%= assets %>/img/team/diegudo.png"
   description: "Assessor para o Portal e-Democracia, Redator, Tradutor"
   icon: "carrot"
+  rofl-icon: "holy"
   bio: "é Analista Legislativo. É servidor público desde 2007 com passagem pelos Ministérios da Cultura e Relações Exteriores. Tem formação em Arquitetura e seu trabalho  no Labhacker é variado auxiliando na gestão do e-Democracia, eventos, pesquisa e atuando na divulgação  fazendo apresentações.  "
 - 
   name: "Matheus Fernandes"
@@ -75,7 +76,8 @@
   rofl: true
   photo: "<%= assets %>/img/team/ericonan.png"
   description: "Desenvolvedor e administrador de sistemas"
-  icon: "bomb"
+  icon: "beer"
+  rofl-icon: "battle-axe"
   bio: "é desenvolvedor do Laboratório Hacker da Câmara dos Deputados. Tem formação em Análise e Desenvolvimento de Sistemas pelo IFPI e atua no Labhacker na criação e manutenção de projetos e administração de servidores."
 - 
   name: "Caio Viotti"
@@ -96,5 +98,5 @@
   slug: "steph"
   photo: "<%= assets %>/img/team/steph.png"
   description: "Estagiária de Comunicação e Jornalismo"
-  icon: "crib"
+  icon: "pacifier"
   bio: "é graduanda em jornalismo pelo IESB e estagiária no Laboratório Hacker da Câmara dos Deputados. Já atuou na Assessoria de Imprensa da Embrapa, da Associação Nacional dos Servidores da Previdência e da Seguridade Social (ANASPS), do Partido da República (PR) e da Redação e Editoração de Cultura do Jornal Correio Braziliense. Também é Jornalista voluntária desde 2013 no Clube de Astronomia de Brasília (CAsB)."

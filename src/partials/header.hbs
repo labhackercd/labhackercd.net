@@ -228,6 +228,8 @@ $.ajax({
 <script>
   $( document ).ready(function() {
     $('.member-card__icon.lol').click(function() {
+      $(this).toggleClass('hide');
+      $(this).siblings().toggleClass('hide');
       $(this).closest('.member-card').find('.member-card__picture-container').toggleClass('lol');
     });
 
@@ -240,7 +242,7 @@ $.ajax({
         $('body').append('<div class="rofl"><div class="the-ericonan-wrapper"><img class="the-ericonan-logo" src="assets/img/ericonan-logo.png"><img class="the-ericonan" src="assets/img/ericonan.jpg"></div><div class="lightning"></div></div>');
 
         $('.ericonanmp3')[0].play();
-        
+
         setTimeout(function() {
           $('.rofl').remove();
         }, 14000);
