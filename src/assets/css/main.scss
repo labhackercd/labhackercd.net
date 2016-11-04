@@ -48,11 +48,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
 @mixin textGlitch($name, $intensity, $textColor, $background, $duration1, $pause1, $duration2, $pause2, $highlightColor1, $highlightColor2, $width, $height) {
-  
+
   color: $textColor;
   position: relative;
   $steps: $intensity;
-  
+
   // Ensure the @keyframes are generated at the root level
   @at-root {
     // We need two different ones
@@ -79,7 +79,7 @@
     left: 0;
     width: 100%;
     background: $background;
-    clip: rect(0, 0, 0, 0); 
+    clip: rect(0, 0, 0, 0);
   }
   &::after {
     left: 17px;
@@ -88,16 +88,16 @@
   }
   &::before {
     left: -12px;
-    text-shadow: 12px 0 $highlightColor2; 
+    text-shadow: 12px 0 $highlightColor2;
     animation: #{$name}-anim-2 $duration2 $pause2 infinite linear alternate-reverse;
   }
-  
+
 }
 
 @mixin imgGlitch($name, $intensity, $width, $height, $top, $left) {
-  
+
   $steps: $intensity;
-  
+
   // Ensure the @keyframes are generated at the root level
   @at-root {
     // We need two different ones
@@ -116,7 +116,7 @@
       }
     }
   }
-  
+
   > img {
     position: absolute;
     top: $top+px;
@@ -124,7 +124,7 @@
   }
   > img:nth-child(2),
   > img:nth-child(3){
-    clip: rect(0, 0, 0, 0); 
+    clip: rect(0, 0, 0, 0);
   }
   > img:nth-child(2) {
     left: ($left + 2) + px;
@@ -211,7 +211,7 @@ header {
         margin-bottom: 1rem;
         vertical-align: middle;
 
-        @media (max-width: 769px) { 
+        @media (max-width: 769px) {
           margin-bottom: 3.5rem;
         }
       }
@@ -287,7 +287,7 @@ header {
         transform: translate(0, 4.5rem);
       }
 
-      @media (max-width: 769px) { 
+      @media (max-width: 769px) {
         display: block;
       }
 
@@ -362,7 +362,7 @@ header {
         }
     }
 
-    &.sticked {        
+    &.sticked {
         background-color: $dark-blue;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.46), 0 1px 4px rgba(0, 0, 0, 0.23);
     }
@@ -392,7 +392,7 @@ header {
             left: 0;
             top: 0;
             height: calc(100vh - 4.5rem);
-            background-color: $dark-blue;    
+            background-color: $dark-blue;
         }
     }
 
@@ -416,7 +416,7 @@ header {
         }
 
         &--social {
-            
+
             @media (max-width: 769px) {
                 display: inline-block;
             }
@@ -490,8 +490,8 @@ header {
 
         &:hover, &:focus, &.active {
             color: #fff;
-            text-decoration: none; 
-            
+            text-decoration: none;
+
             &::before {
                 transform: scaleX(1);
                 transform-origin: left;
@@ -541,13 +541,13 @@ header {
                 }
             }
 
-            
+
         }
 
         &--logo {
             display: table-cell;
             vertical-align: middle;
-            transition: opacity 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1), visibility 0s 0.4s;   
+            transition: opacity 0.3s 0s cubic-bezier(0.55, 0, 0.1, 1), visibility 0s 0.4s;
 
             @media (max-width: 992px) {
                 display: none;
@@ -583,7 +583,7 @@ header {
 
             &:hover, &:focus {
                 color: #333333;
-            }            
+            }
         }
 
         &--facebook {
@@ -687,11 +687,11 @@ header {
     }
 
     &__text {
-        
+
         font-weight: 700;
         color: whitesmoke;
         position: relative;
-        
+
 
         .text__phrase {
             display: inline-block;
@@ -708,7 +708,7 @@ header {
                 0%   {visibility: visible}
                 50% {visibility: hidden}
             }
-            animation: blink 1.2s infinite; 
+            animation: blink 1.2s infinite;
         }
     }
 
@@ -736,7 +736,7 @@ header {
             right: 0;
             transform: scaleX(0);
             transform-origin: right;
-            transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);  
+            transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
         }
 
         &:hover, &:focus {
@@ -850,7 +850,7 @@ header {
                     right: 0;
                     transform: scaleX(0);
                     transform-origin: right;
-                    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);  
+                    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
                 }
             }
         }
@@ -863,7 +863,7 @@ header {
                 transform-origin: left;
                 transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
             }
-        } 
+        }
     }
 }
 
@@ -940,12 +940,12 @@ header {
         background-color: #9b59b6;
         color: white;
     }
-    
+
     &--parceria {
         background-color: #3498db;
         color: white;
-    } 
-       
+    }
+
     &--programa {
         background-color: #e67e22;
         color: white;
@@ -956,7 +956,7 @@ header {
     &__filter-bar {
         padding: 1.5rem 0;
         background-color: #E0E0E0;
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
 
         .filter-bar__header {
             font-size: 2rem;
@@ -966,7 +966,7 @@ header {
             display: inline-block;
             vertical-align: middle;
         }
-    }    
+    }
 
     &__filter {
         display: inline-block;
@@ -1023,8 +1023,8 @@ header {
                 &--parceria {
                     background-color: #3498db;
                     color: white;
-                } 
-                   
+                }
+
                 &--programa {
                     background-color: #e67e22;
                     color: white;
@@ -1086,7 +1086,7 @@ header {
     }
 
     &__image {
-        width: 200px;   
+        width: 200px;
     }
 
     &__heading {
@@ -1137,8 +1137,8 @@ header {
         justify-content: center;
         font-size: 2rem;
 
-        .activities__list.fail & {  
-            display: flex;       
+        .activities__list.fail & {
+            display: flex;
         }
     }
 }
@@ -1211,7 +1211,7 @@ section .more {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
+
     &.-about {
         background-image: url(../img/headers/about-header.jpg);
         margin-bottom: 0;
@@ -1243,7 +1243,7 @@ section .more {
     .masthead-icon {
         width: 300px;
         text-align: center;
-        
+
         > .img {
             width: 200px;
 
@@ -1263,7 +1263,7 @@ section .more {
             width: auto;
             text-align: center;
         }
-  
+
         &.-about {
             color: #1E293B;
             text-shadow: none;
@@ -1488,12 +1488,12 @@ $jumbotron-height: 300px;
     background-size: cover;
     z-index: -1;
     /* Keep the background behind the content */
-    
+
     height: 20%;
     width: 20%;
     /* Using Glen Maddern's trick /via @mente */
     /* don't forget to use the prefixes you need */
-    
+
     transform: scale(5);
     transform-origin: top left;
 }
@@ -1548,13 +1548,13 @@ $color_tapa_approx: #777;
 .carousel-caption {
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-    
+
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-    
+
     box-sizing: border-box;
     /* Opera/IE 8+ */
-    
+
     height: 100%;
     bottom: 0px;
     display: flex;
@@ -1747,7 +1747,7 @@ $color_tapa_approx: #777;
       &.lol {
         & .member-card__picture-wrapper{
           transform: rotateY(180deg);
-        } 
+        }
       }
     }
 
@@ -1815,6 +1815,7 @@ $color_tapa_approx: #777;
     .member-card__bio {
       position: relative;
       display: flex;
+      flex: 1;
       margin-top: -4rem;
       margin-bottom: 0;
       font-weight: 300;
@@ -1824,7 +1825,6 @@ $color_tapa_approx: #777;
       padding: 2.5rem 2rem;
       align-items: center;
       justify-content: center;
-      height: calc(100% - 14.7rem);
       background-color: #051126;
     }
 }
