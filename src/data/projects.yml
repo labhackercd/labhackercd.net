@@ -5,25 +5,25 @@
   github: "https://github.com/labhackercd/edemocracia-colab"
   image: "<%= assets %>/img/projects/novoedem_projeto.png"
   description: "Um novo portal e-Democracia com foco na experiência do usuário está em desenvolvimento e já disponível em versão beta. Ele facilita a participação por meio da recomendação de temas segundo o interesse dos cidadãos, além de possibilitar a integração das várias ferramentas do portal com mecanismos de outras plataformas."
-  categories: 
+  categories:
     - name: "Projeto"
     - name: "Em desenvolvimento"
-- 
+-
   title: "Wikilegis"
   href: "http://wikilegis.labhackercd.net"
   href-display: "Ver Projeto"
   github: "https://github.com/labhackercd/wikilegis"
   image: "<%= assets %>/img/projects/wikilegis_projeto.png"
   description: "O Wikilegis possibilita o processo colaborativo na elaboração das leis, de forma que os cidadãos possam participar do debate e da construção dos textos com os deputados."
-  categories: 
+  categories:
     - name: "Projeto"
     - name: "Em desenvolvimento"
-- 
+-
   title: "1º Hackathon Legislativo Mundial"
   href: "http://www.wepc2016.org/en/hackathon-wepc2016"
   href-display: "Ir para o site"
   description: "Maratona que vai reunir hackers cívicos, programadores e desenvolvedores de softwares para a criação de sites e aplicativos, relacionados a temas legislativos, que aumentem a transparência das informações dos Parlamentos e a participação social. O Laboratório Hacker da Câmara promove o 1º Hackathon Legislativo Mundial em parceria com a Câmara de Deputados do Chile, a União Interparlamentar e o Instituto Nacional Democrata. O evento será realizado de 28 a 30 de junho em Valparaíso, no Chile. Inscrições abertas até 26 de junho para participações presenciais ou remotas."
-  categories: 
+  categories:
    - name: "Evento"
    - name: "Parceria"
 -
@@ -33,7 +33,7 @@
   github: "https://github.com/labhackercd/edemocracia"
   image: "<%= assets %>/img/projects/e_democracia_projeto.png"
   description: "O portal e-Democracia da Câmara dos Deputados tem o objetivo de aprimorar o relacionamento entre cidadãos e deputados e ampliar a transparência no processo legislativo. Para tanto, dispõe de diversas ferramentas que favorecem a participação social, como, por exemplo, fóruns, wikilegis, biblioteca virtual e audiência pública interativa."
-  categories: 
+  categories:
     - name: "Projeto"
 -
   title: "Retórica Parlamentar"
@@ -42,7 +42,7 @@
   github: "https://github.com/labhackercd/Retorica/tree/integration"
   image: "<%= assets %>/img/projects/retorica_projeto.png"
   description: "O Retórica Parlamentar consiste na análise e visualização em forma de bolhas dos principais temas presentes nos pronunciamentos dos deputados brasileiros durante o pequeno expediente. Dentro de cada bolha, que corresponde a um tema, é possível verificar quais os deputados o abordaram nos seus discursos. Clicando em um deputado, é possível visualizar mais informações sobre ele."
-  categories: 
+  categories:
     - name: "Projeto"
 -
   title: "Painel Social"
@@ -51,7 +51,7 @@
   github: "https://github.com/labhackercd/painel-social/"
   image: "<%= assets %>/img/projects/painel_social_projeto.png"
   description: "O projeto Painel Social consiste em um piloto para a visualização de informações legislativas e de redes sociais. O principal público alvo são os órgãos internos da Câmara dos Deputados, tais como Comissões e Lideranças."
-  categories: 
+  categories:
     - name: "Projeto"
     - name: "Descontinuado"
 -
@@ -59,73 +59,66 @@
   github: "https://github.com/labhackercd/teste_participativo"
   image: "<%= assets %>/img/projects/mapa_participativo_projeto.png"
   description: "O projeto Mapa Participativo tem por objetivo desenvolver uma ferramenta que possibilite uma navegação visual mais simplificada em discussões virtuais. A proposta é facilitar a identificação das principais questões, ideias e argumentos sobre determinado assunto, permitindo a gestão e a sistematização dos conteúdos criados colaborativamente, com a finalidade de torná-los mais efetivos."
-  categories: 
+  categories:
     - name: "Projeto"
     - name: "Descontinuado"
-- 
+-
   title: "Pequenos Hackers – Scratch"
   href: "http://blog.labhackercd.net/2016/4/27/pequenos-hackers-invadem-labhacker-nesta-sexta-feira/"
   href-display: "Leia o post"
   description: "Oficina para jovens com idade entre 10 e 12 anos trabalharem, de maneira integrada, noções de programação de jogos e conceitos básicos de Democracia. Evento no dia 29 de abril. Inscrições até 24 de abril, por meio de vídeo respondendo à pergunta: “O que democracia tem a ver com tecnologia”. Os dez vídeos mais votados na Fanpage do LabHacker garantirão as vagas."
-  categories: 
+  categories:
     - name: "Evento"
-- 
+-
   title: "Pequenos Hackers – Ideação de jogo online"
   href: "http://blog.labhackercd.net/2016/3/21/criancas-idealizam-jogo-online-sobre-representatividade/"
   href-display: "Leia o post"
   description: "Oficina para crianças e jovens com idade entre 10 e 14 anos, que dá continuidade à série de atividades “Pequenos Hackers”, desta vez com parceria do portal Plenarinho da Câmara. Tem como objetivo inserir os participantes no debate e criação de ideias para a elaboração de um jogo online de representatividade, focado no público infanto-juvenil. Evento nos dias 18 e 23 de março. Inscrições abertas no dia 11 de março. Os primeiros 10 e-mails que chegarem para o endereço labhacker@camara.leg.br a partir das 15 horas garantem as vagas."
-  categories: 
+  categories:
     - name: "Evento"
-- 
+-
   title: "Parada Hacker – BlockChain"
   href: "http://blog.labhackercd.net/2016/5/16/nossa-discussao-sobre-o-blockchain-foi-uma-parada-muito-legal/"
   href-display: "Leia o post"
   description: "Debate sobre o BlockChain, tecnologia para a segurança de informações digitais. Os especialistas Walker de Alencar, João Barguil e Jean Lucas Lima vão discutir os possíveis benefícios do uso dessa tecnologia para a proteção dos dados da Câmara, com a participação de servidores da Casa. Evento no dia 12 de maio, das 15h às 17h. Os interessados podem acompanhar pelo canal do LabHacker no YouTube e enviar dúvidas e comentários para os especialistas."
-  categories: 
+  categories:
     - name: "Evento"
-- 
+-
   title: "Nós do Lab: Todos juntos amarrando as ações do LabHacker"
   href: "http://blog.labhackercd.net/2016/4/18/nos-do-lab-colaboracao-e-inovacao-em-debate/"
   href-display: "Leia o post"
   description: "Debate com pesquisadores, parlamentares, professores, ativistas cívicos e especialistas em tecnologia de todo o País sobre participação social e premissas colaborativas para o Legislativo. Durante todo o dia, os convidados vão compartilhar informações e experiências para aprimorar o trabalho do LabHacker e sugerir ações para tornar o Parlamento mais aberto. Evento no dia 30 de março, a partir das 9 horas, no espaço LabHacker. Os interessados podem acompanhar pelo canal do LabHacker no YouTube e enviar dúvidas e comentários para os participantes."
-  categories: 
+  categories:
     - name: "Evento"
-- 
+-
   title: "Estágio-Visita"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-visita-curta-duracao/conheca"
   href-display: "Saiba Mais"
   description: "O LabHacker é parceiro no programa Estágio-Visita da Câmara e recebe mensalmente em seu espaço os universitários que vêm de todo o país para conhecer as atividades legislativas, incentivando a participação democrática e o exercício da cidadania. Durante cinco dias, os estudantes participam de debates, visitas, palestras, vivências e simulações que possibilitam o desenvolvimento de conhecimentos sobre democracia e papel do Legislativo. Os interessados devem entrar em contato com os parlamentares que representam seu estado e pedir a indicação."
-  categories: 
+  categories:
     - name: "Programa"
     - name: "Parceria"
-- 
+-
   title: "Estágio-Cidadão"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-cidadao/conheca-mais"
   href-display: "Saiba Mais"
   description: "O LabHacker é parceiro no programa Estágio-Cidadão da Câmara, dedicado aos universitários que fazem estágio na Casa. O objetivo desse programa é esclarecer, por meio de aulas, vivências, palestras e simulações, as funções do Parlamento e a importância do exercício da cidadania. Edições: a primeira será de 13 a 17 de junho; e a segunda, de 03 a 07 de outubro."
-  categories: 
+  categories:
     - name: "Programa"
     - name: "Parceria"
-- 
+-
   title: "Escola na Câmara"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/escola-na-camara/cartilha-escola%20na%20camara.pdf"
   href-display: "Leia a Cartilha"
   description: "O LabHacker também é parceiro no programa Escola na Câmara, que recebe mensalmente alunos do ensino médio das escolas públicas do Distrito Federal para uma visita guiada à Casa, integrada a atividades pedagógicas com especialistas. O objetivo do programa é capacitar esses estudantes para a consciência crítica e para a participação no processo político-democrático. As escolas interessadas devem entrar em contato pelo e-mail: escolanacamara.cefor@camara.leg.br ou pelos telefones 3216.7618/19."
-  categories: 
+  categories:
     - name: "Programa"
     - name: "Parceria"
-- 
+-
   title: "Estágio Participação"
   href: "http://www2.camara.leg.br/responsabilidade-social/edulegislativa/educacao-legislativa-1/educacao-para-a-democracia-1/estagio-participacao/inscricoes"
   href-display: "Saiba Mais"
   description: "O LabHacker é um dos responsáveis pelo programa Estágio Participação da Câmara, que recebe mensalmente estudantes universitários para estimular a participação democrática e cidadã por meio de atividades que ampliem o conhecimento sobre o Poder Legislativo. A dinâmica está baseada no cumprimento de tarefas ou missões sobre um tema específico, que serão propostas aos estudantes durante os três dias de vivência na Casa. Os interessados devem responder corretamente as questões de um quiz, que é disponibilizado no Portal da Câmara. Os 50 estudantes mais bem classificados são convidados a fazer a inscrição."
-  categories: 
+  categories:
     - name: "Programa"
-    - name: "Parceria"
-- 
-  title: "CLP Digital"
-  #href: "#"
-  href-display: "Ver Projeto"
-  description: "O LabHacker desenvolve uma parceria com a Comissão de Legislação Participativa para o projeto CLP Digital, que inclui a realização de audiências públicas interativas; a participação colaborativa de cidadãos, pelo Wikilegis, em sugestões de projetos apresentadas à comissão; e a proposta de novas ferramentas. Entre essas ferramentas, está a petição eletrônica que, com um número significativo de subscrições, permitirá o debate de temas específicos de interesse popular em audiências públicas da CLP."
-  categories: 
     - name: "Parceria"
