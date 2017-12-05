@@ -3,10 +3,10 @@
 -
   name: "Evento"
 -
-  name: "Parceria"
--
-  name: "Programa"
--
   name: "Em Desenvolvimento"
+-
+  name: "Concluído"
+-
+  name: "Beta"
 -
   name: "Descontinuado"

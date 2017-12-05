@@ -1,60 +1,53 @@
-- 
+-
   name: "Cristiano Ferri Faria"
   slug: "cristiano"
   photo: "<%= assets %>/img/team/cristiano.png"
   description: "Diretor - FC-03"
   icon: "ship"
   bio: "Cristiano é o Diretor do Laboratório Hacker da Câmara dos Deputados.  É também idealizador do Portal e-Democracia. Como servidor da Câmara dos Deputados desde 1993, tem trabalhado em projetos relativos ao processo legislativo, qualidade da lei, transparência legislativa, democracia digital, atividades colaborativas (maratonas hacker) e inovação. Doutor em ciência política e sociologia pela Universidade do Estado do Rio de Janeiro - Instituto de Estudos Sociais e Políticos, Mestre em Políticas Públicas pela Queen Mary College - Universidade de Londres e pesquisador associado do Ash Center for Democratic Governance and Innovation da Universidade de Harvard."
-- 
+-
   name: "Rogério Scheidemantel"
   slug: "rogs"
   photo: "<%= assets %>/img/team/rogerio.png"
   description: "Diretor-Adjunto - FC-02"
   icon: "anchor"
   bio: "Rogério é o Diretor Adjunto do Laboratório Hacker da Câmara dos Deputados.  Mestre em Engenharia Elétrica-Telecomunicações pela Universidade de Brasília, com ampla experiência em projetos de hardware de comunicação e criptografia. Rogério trabalha como Analista Legislativo da Câmara dos Deputados desde 2002, nas áreas de Processo Legislativo e Orçamento Público."
-- 
-  name: "Daniel Shim"
-  slug: "daniel"
-  photo: "<%= assets %>/img/team/daniel.png"
-  description: "Gerente de projetos experimentais - FC-01"
-  icon: "plane"
-  bio: "Daniel é Mestre em Administração pela Universidade de Brasília (DF), pós-graduado em Psicopedagogia Clínica e Empresarial pela Universidade Católica de Brasília (DF), Gestão de Pessoas no Setor Público pela Universidade Gama Filho (RJ) e Bacharel em Administração de Empresas pela Universidade de Brasília (DF), trabalha atualmente com projetos experimentais de transparência legislativa e participação social."
-- 
+-
+  name: "Paulo Henrique Araújo"
+  slug: "paulo"
+  photo: "<%= assets %>/img/team/paulo.png"
+  description: "Gestor de Tecnologia - FC-01"
+  icon: "hat"
+  bio: "Paulo Henrique Araújo, mestre em Ciência da Computação pela UFMG, gerente de projetos, militante por inovação, pesquisa e desenvolvimento no serviço público e pela promoção de mecanismos de transparência e participação popular no governo."
+-
   name: "Pedro Brandão"
   slug: "pedro"
   photo: "<%= assets %>/img/team/pedro.png"
   description: "Gestor de tecnologia"
   icon: "coffee"
   bio: "Pedro é Analista Legislativo da Câmara dos Deputados.  Tem formação em Ciência da Computação pela UnB e atua no LabHacker em iniciativas de dados abertos, em projetos de participação, em projetos experimentais e auxiliando decisões tecnológicas. "
-- 
+-
   name: "Simone Ravazzolli"
   slug: "simone"
   photo: "<%= assets %>/img/team/simone.png"
   description: "Gestora de comunicação e planejamento - FC-01"
   icon: "paw"
   bio: "Simone é Analista Legislativo da Câmara desde 1998, onde desenvolve atividades nas áreas de comunicação, com ênfase em jornalismo digital, redes sociais, análise de dados de medição de audiência, e conteúdo multiplataforma. Trabalhou na criação da Coordenação de Participação Popular, área da Secom da Câmara responsável pelo levantamento de dados sobre participação social. Mestre pela UnB, possui MBA em Comunicação Estratégica e Competitiva nas Organizações pelo Instituto Científico de Ensino Superior e Pesquisa, e Master em Jornalismo Digital pelo Instituto internacional de Ciências Sociais – IICS/SP e Universidade de Navarra. "
-- 
+-
   name: "Walternor Brandão"
   slug: "walter"
   photo: "<%= assets %>/img/team/walter.png"
   description: "Gestor do Portal e-Democracia - FC-01"
   icon: "shoes"
   bio: "Walternor é Analista Legislativo da Câmara dos Deputados e Mestre em Poder Legislativo pelo CEFOR - Câmara dos Deputados. Atualmente exerce as funções de Gestor do Portal e-Democracia da Câmara dos Deputados, colaborando para o desenvolvimento de tecnologias de participação popular e transparência pública no âmbito do Laboratório Hacker da Câmara dos Deputados."
-- 
+-
   name: "Luciana Ribeiro"
   slug: "luh"
   photo: "<%= assets %>/img/team/luciana.png"
   description: "Assessora para o Portal e-Democracia"
   icon: "bicycle"
   bio: "Luciana é Técnico Legislativo da Câmara dos Deputados e atua no Labhacker como Assessora para o portal e-Democracia. Tem formação em Odontologia, estudante de Marketing e também é monitora de Visitação Institucional do Congresso Nacional."
-- 
-  name: "Cristiana Borges"
-  slug: "cris"
-  photo: "<%= assets %>/img/team/cristiana.png"
-  description: "Assessora para projetos colaborativos e articulação de redes"
-  icon: "lotus"
-  bio: "Cristiana é Analista Legislativo da Câmara dos Deputados.  Tem formação em Antropologia pela UnB e atua no Labhacker como Assessora para projetos colaborativos e articulação de redes."
-- 
+-
   name: "Diego Cavalcanti Cunha"
   slug: "diegudo"
   rofl: true
@@ -63,14 +56,14 @@
   icon: "carrot"
   rofl-icon: "holy"
   bio: "Diego é Analista Legislativo. É servidor público desde 2007 com passagem pelos Ministérios da Cultura e Relações Exteriores. Tem formação em Arquitetura e seu trabalho  no Labhacker é variado auxiliando na gestão do e-Democracia, eventos, pesquisa e atuando na divulgação  fazendo apresentações.  "
-- 
+-
   name: "Matheus Fernandes"
   slug: "matheus"
   photo: "<%= assets %>/img/team/matheus.png"
   description: "Desenvolvedor e administrador de sistemas"
   icon: "headphones"
-  bio: "Matheus é graduando em Engenharia de Software pela Universidade de Brasília, pythonista e desenvolvedor backend no Laboratório Hacker da Câmara dos Deputados. Atua no desenvolvimento e manutenção de projetos de software, bem como no desenvolvimento e automação de operações relacionadas a esses projetos."
-- 
+  bio: "Matheus é formado em Engenharia de Software pela Universidade de Brasília, pythonista e desenvolvedor backend no Laboratório Hacker da Câmara dos Deputados. Atua no desenvolvimento e manutenção de projetos de software, bem como no desenvolvimento e automação de operações relacionadas a esses projetos."
+-
   name: "Erivânio Vasconcelos"
   slug: "ericonan"
   rofl: true
@@ -79,24 +72,45 @@
   icon: "beer"
   rofl-icon: "battle-axe"
   bio: "Erivânio é desenvolvedor do Laboratório Hacker da Câmara dos Deputados. Tem formação em Análise e Desenvolvimento de Sistemas pelo IFPI e atua no Labhacker na criação e manutenção de projetos e administração de servidores."
-- 
+-
   name: "Caio Viotti"
   slug: "caio"
   photo: "<%= assets %>/img/team/caio.png"
-  description: "Desenvolvedor de interfaces de usuário"
+  description: "Desenvolvedor de interfaces web"
   icon: "gamepad"
-  bio: "Caio é graduando em Computação pela Universidade de Brasília. Aficionado por design, ergonomia, e apaixonado por tecnologia, atua como desenvolvedor Front-End do LabHacker na implementação de interfaces de aplicações web, com foco na experiência de usuário. É entusiasta de Software Livre e advoca por sua disseminação, especialmente no Setor Público. Já atuou também com tecnologias do Legislativo no Programa Interlegis do Senado Federal."
-- 
+  bio: "Caio é aficionado por design, ergonomia, e apaixonado por tecnologia, atua como desenvolvedor Front-End do LabHacker na implementação de interfaces de aplicações web, com foco na experiência de usuário. É entusiasta de Software Livre e advoca por sua disseminação, especialmente no Setor Público. Já atuou também com tecnologias do Legislativo no Programa Interlegis do Senado Federal."
+-
+  name: "Caê Penna"
+  slug: "cae"
+  photo: "<%= assets %>/img/team/cae.png"
+  description: "Designer e Desenvolvedor de Interfaces Web"
+  icon: "door-out"
+  bio: "Caê ainda atua como designer e desenvolvedor no LabHacker. Tem formação em Comunicação Social e experiência profissional com testes de usabilidade, desenho de interfaces digitais, composição gráfica e desenvolvimento front-end."
+-
   name: "João Lúcio Dreyer"
   slug: "jao"
   photo: "<%= assets %>/img/team/joao.png"
   description: "Designer, Webdesigner, Publicitário, Ilustrador, Videografista"
   icon: "rebel"
   bio: "João é formado em Publicidade e Propaganda, Sempre procurando aprender mais sobre a área de design e os mistérios das artes visuais, Maneja as poderosas ferramentas do Design, como: Photoshop, CorelDraw, Ilustrator, After effects e recentemente buscando desvendar Maya. Tentando ser o mais versátil possivel na área, fazendo o trabalho de Design Gráfico, WebDesigner, Design de interiores, Ilustrador, Videografista, Editor de vídeo, entre outros."
-- 
-  name: "Stephane Paula"
-  slug: "steph"
-  photo: "<%= assets %>/img/team/steph.png"
-  description: "Estagiária de Comunicação e Jornalismo"
-  icon: "pacifier"
-  bio: "Stephane é graduanda em jornalismo pelo IESB e estagiária no Laboratório Hacker da Câmara dos Deputados. Já atuou na Assessoria de Imprensa da Embrapa, da Associação Nacional dos Servidores da Previdência e da Seguridade Social (ANASPS), do Partido da República (PR) e da Redação e Editoração de Cultura do Jornal Correio Braziliense. Também é Jornalista voluntária desde 2013 no Clube de Astronomia de Brasília (CAsB)."
+-
+  name: "Gabriela Carvalho"
+  slug: "gabi"
+  photo: "<%= assets %>/img/team/gabi.png"
+  description: "Documentadora Operadora Micro Sênior"
+  icon: "bomb"
+  bio: "Gabriela é Documentadora Operadora Micro Sênior da Câmara dos Deputados e atua no LabHacker como Assistente Administrativa e Supervisora das Atividades Hackers. É estudante de Direito na UDF e participa das organizações dos eventos de interesse do Laboratório Hacker."
+-
+  name: "Luciano Vellasco"
+  slug: "luciano"
+  photo: "<%= assets %>/img/team/luciano.png"
+  description: "Estagiário de Comunicação e Jornalismo"
+  icon: "open-book"
+  bio: "Luciano é graduando em jornalismo pelo IESB e estagiário no Laboratório Hacker da Câmara dos Deputados auxiliando a equipe de comunicação. Já atuou no Ministério da Cultura, na Associação Nacional das Empresas de Transportes Urbanos e na editoria de Cultura do Jornal Alô Brasília e do Correio Braziliense. Além disso é blogueiro, fotógrafo e promotor de eventos na área de literatura."
+-
+  name: "Matheus Maroneze"
+  slug: "maroneze"
+  photo: "<%= assets %>/img/team/maroneze.png"
+  description: "Estagiário de Estatística"
+  icon: "mayo"
+  bio: "Matheus é graduando em estatística pela Universidade de Brasília. Atua no LabHacker em análise de dados de visita ao novo portal do E-Democracia. Para análise e pequenas e grandes bases de dados, tem conhecimento no software Statistical Analysis System (SAS)"
